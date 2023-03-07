@@ -28,13 +28,13 @@ One-hot encoding identifies all unique column values and splits the single categ
 
 The next step was to assemble the architecture of the deep learning model. In this project, we used Keras, a deep learning API from TensorFlow 2. Our input layer included the independent variables like loan amount and credit scores. We created two hidden layers with 495 and 275 nodes, respectively. As a rule of thumb, hidden layers should have 2/3 the number of neurons as the input features. Finally, our out put layer consists of a single node; the output of this node is the predicted value of the dependent variable - in this case, interest rate. 
 
- 
- ![image](https://user-images.githubusercontent.com/112348240/222617620-6986d9bc-d574-4d47-aefb-63b4b772277c.png)
- 
- ## **Final Project**
- 
- ## **UCF Bootcamp Data Analytics and Visualization**
 
+## **Communication Channels use for The Project**
+- Slack
+- Zoom Meeting
+- Microsoft Meeting
+
+## **Tables that were create using pgAdmin4 for SQL:**
 
 Credit Scores criteria 600-699
 ![CS1](https://user-images.githubusercontent.com/112505962/223245228-70c80f0a-66bf-4d36-afe6-ee27eca1664b.png)
@@ -67,4 +67,9 @@ Credit Scores Criteria 800-850
 ![down payment summary](https://user-images.githubusercontent.com/112505962/223246491-9395ea03-1d37-4281-8218-ef9cbb23be6e.png)
 
 
-
+ 
+ ![image](https://user-images.githubusercontent.com/112348240/222617620-6986d9bc-d574-4d47-aefb-63b4b772277c.png)
+ 
+ ## **Final Project**
+ 
+ ## **UCF Bootcamp Data Analytics and Visualization**
