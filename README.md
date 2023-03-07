@@ -5,19 +5,18 @@
 
 ## Overview
 
-Our purpose for this assignment is to be able to help users predict their mortgage interest rates based off income, debt to income, credit score and other contributing factors. The process of buying a house can be stressful but rewarding and we want users to feel they can have an accurate calculation based on the market
-
-Machine Learning 
-Database
-HTML
-CSS
-JS
+Our purpose for this assignment is to be able to help users predict their mortgage interest rates based off income, debt to income, credit score and other contributing factors. The process of buying a house can be stressful but rewarding and we want users to feel they can have an accurate calculation based on the market. We are incorporating SQL, Python, HTML, CSS, JavaScript, Machine Learning and more to help users predict their possible mortgage interest rate 
 
 
 ## Current Status
- 
+The currenst status of our project is not being able to complete 
+
+
 ## Challenges
- 
+
+
+
+
 ## Projectory
  
  
