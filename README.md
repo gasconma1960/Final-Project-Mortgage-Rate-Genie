@@ -73,6 +73,8 @@ The next step was to assemble the architecture of the deep learning model. In th
  
  ![image](https://user-images.githubusercontent.com/112348240/222617620-6986d9bc-d574-4d47-aefb-63b4b772277c.png)
  
+
+ 
  ## **Final Project**
  
  ## **UCF Bootcamp Data Analytics and Visualization**
