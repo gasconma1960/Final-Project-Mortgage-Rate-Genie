@@ -28,21 +28,21 @@ One-hot encoding identifies all unique column values and splits the single categ
 
 The next step was to assemble the architecture of the deep learning model. In this project, we used Keras, a deep learning API from TensorFlow 2. Our input layer included the independent variables like loan amount and credit scores. We created two hidden layers with 495 and 275 nodes, respectively. As a rule of thumb, hidden layers should have 2/3 the number of neurons as the input features. Finally, our out put layer consists of a single node; the output of this node is the predicted value of the dependent variable - in this case, interest rate. 
 
- 
- ![image](https://user-images.githubusercontent.com/112348240/222617620-6986d9bc-d574-4d47-aefb-63b4b772277c.png)
- 
- ## **Final Project**
- 
- ## **UCF Bootcamp Data Analytics and Visualization**
 
+## **Communication Channels use for The Project**
+- Slack
+- Zoom Meeting
+- Microsoft Meeting
 
-Credit Scores criteria 600-699
+## **Tables that were create using pgAdmin4 for SQL:**
+
+**Credit Scores criteria 600-699**
 ![CS1](https://user-images.githubusercontent.com/112505962/223245228-70c80f0a-66bf-4d36-afe6-ee27eca1664b.png)
 
-Credit Scores criteria 700-799
+**Credit Scores criteria 700-799**
 ![CS2](https://user-images.githubusercontent.com/112505962/223245103-598d8673-8a05-4dc2-85b4-fe84c53304e2.png)
 
-Credit Scores Criteria 800-850
+**Credit Scores Criteria 800-850**
 ![CS3](https://user-images.githubusercontent.com/112505962/223245489-7e34ba75-4764-4c77-85e4-a6d33a2fe3b5.png)
 
 
@@ -68,3 +68,17 @@ Credit Scores Criteria 800-850
 
 
 
+![image](https://user-images.githubusercontent.com/112505962/223301247-13e337eb-1a77-4081-b6cf-5b72a3988893.png)
+
+ 
+ ![image](https://user-images.githubusercontent.com/112348240/222617620-6986d9bc-d574-4d47-aefb-63b4b772277c.png)
+ 
+ ## Visualization
+ 
+ [Gif image](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmExNmVkYzg3MDFhNzkxMGNmODM1ZGE1NDk1NTA4MTYyNWJmMDZhOCZjdD1n/QmNuYxDZgxXAEobjLZ/giphy.gif)
+ 
+ [Gif image](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZWM5Y2VlOTkzZTU0NTZlN2VjNzRkNWM5NDYzNGM1ZWEyZTlmZjk2NyZjdD1n/1WSdNroJ9bS4YduyU1/giphy.gif)
+ 
+ ## **Final Project**
+ 
+ ## **UCF Bootcamp Data Analytics and Visualization**
