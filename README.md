@@ -36,13 +36,13 @@ The next step was to assemble the architecture of the deep learning model. In th
 
 ## **Tables that were create using pgAdmin4 for SQL:**
 
-Credit Scores criteria 600-699
+**Credit Scores criteria 600-699**
 ![CS1](https://user-images.githubusercontent.com/112505962/223245228-70c80f0a-66bf-4d36-afe6-ee27eca1664b.png)
 
-Credit Scores criteria 700-799
+**Credit Scores criteria 700-799**
 ![CS2](https://user-images.githubusercontent.com/112505962/223245103-598d8673-8a05-4dc2-85b4-fe84c53304e2.png)
 
-Credit Scores Criteria 800-850
+**Credit Scores Criteria 800-850**
 ![CS3](https://user-images.githubusercontent.com/112505962/223245489-7e34ba75-4764-4c77-85e4-a6d33a2fe3b5.png)
 
 
