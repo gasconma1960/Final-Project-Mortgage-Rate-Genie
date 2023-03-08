@@ -53,7 +53,8 @@ Coefficients
 ## **Communication Channels use for The Project**
 - Slack
 - Zoom Meeting
-- Microsoft Meeting
+- WhatsApp
+- Microsoft Teams Meeting
 
 ## **Tables that were create using pgAdmin4 for SQL:**
 
