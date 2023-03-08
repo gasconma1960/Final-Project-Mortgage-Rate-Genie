@@ -26,8 +26,29 @@ Another assumption of linear regression is that there is no multicollinearity. I
 
 One-hot encoding identifies all unique column values and splits the single categorical column into a series of columns, each containing information about a single unique categorical value.
 
-The next step was to assemble the architecture of the deep learning model. In this project, we used Keras, a deep learning API from TensorFlow 2. Our input layer included the independent variables like loan amount and credit scores. We created two hidden layers with 495 and 275 nodes, respectively. As a rule of thumb, hidden layers should have 2/3 the number of neurons as the input features. Finally, our out put layer consists of a single node; the output of this node is the predicted value of the dependent variable - in this case, interest rate. 
+The next step was to assemble the architecture of the deep learning model. In this project, we used Keras, a deep learning API from TensorFlow 2. Our input layer included the independent variables like loan amount and credit scores. We created two hidden layers with 495 and 297 nodes, respectively.  Finally, our out put layer consists of a single node; the output of this node is the predicted value of the dependent variable - in this case, interest rate. 
 
+-model selection
+
+model run through 5 epochs
+
+## Results
+![model evaluation]
+
+y-intercept: 0.011
+
+Coefficients
+*X1 (Loan Amount): -0.115
+*X2 (Credit Score): -0.079
+*X3 (Loan Term): -0.049
+*X4 (Down Payment): 0.064
+*X5 (Property Type_Condo): -0.003
+    (Property Type_Multi-Family): 0.099
+    (Property Type_Single-Family): -0.100
+    (Property Typer_Townhouse): 0.087
+
+## Discussion
+-Limitations/shortcomings of deep learning model - cannot determine feature weight
 
 ## **Communication Channels use for The Project**
 - Slack
