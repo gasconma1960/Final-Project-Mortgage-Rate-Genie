@@ -1,42 +1,9 @@
-# Final-Project-Mortgage-Rate -Genie
- Predict the interes rate using different Machine Learning
- By: Christy, Marisol, Stephanie, Maria & Omie
+Predict the interes rate using different Machine Learning
+![image](https://user-images.githubusercontent.com/112348240/222618055-59e1b13b-2416-44a8-aec8-f72cd7ed904c.png)
 
 ## Overview
 
-Our purpose for this assignment is to be able to help users predict their mortgage interest rates based off income, debt to income, credit score and other contributing factors. The process of buying a house can be stressful but rewarding and we want users to feel they can have an accurate calculation based on the market
-
-Machine Learning 
-Database
-HTML
-CSS
-JS
-
-
-## Current Status
- 
-## Challenges
- 
-## Projectory
- 
- 
- 
- 
- This file should always reflect the current status of the project, any specific needs or challenges that exist, and the plans for future work. Make sure to inclue links to your data, your slide deck, and any other important references
- 
- 
- 
- ![mortgage_data](https://github.com/gasconma1960/Final-Project-Mortgage-Rate-Genie/blob/main/Pics/mortgage_interest_big.png)
- 
- 
- 
- 
- ![credit_score](https://github.com/gasconma1960/Final-Project-Mortgage-Rate-Genie/blob/main/Pics/credit_score.png)
- ![image](https://user-images.githubusercontent.com/112348240/222618055-59e1b13b-2416-44a8-aec8-f72cd7ed904c.png)
-
-## Overview
-
-In this project, we aim to develop a model that can accurately predict mortgage interest rates based on a variety of factors. Mortgage interest rates play a critical role in the housing market, affecting everything from affordability for homebuyers to the profitability of real estate investments. 
+In this project, we aim to develop a model that can accurately predict mortgage interest rates based on a variety of factors. Mortgage interest rates play a critical role in the housing market, affecting everything from affordability for homebuyers to the profitability of real estate investments. Our purpose for this assignment is to be able to help users predict their mortgage interest rates based off income, debt to income, credit score and other contributing factors. The process of buying a house can be stressful but rewarding and we want users to feel they can have an accurate calculation based on the market
 
 ## Data Collection
 The first component of our project was to find a dataset that included mortgage interest rates and multiple factors that influence interest rates. We decided to use ChatGPT to help design the appropriate dataset. The following was the prompt that was entered into ChatGPT:
@@ -68,23 +35,8 @@ Train the model: Split the dataset into training and validation sets and train t
 
 Evaluate the model: Once the model is trained, evaluate its performance on a test set of data that was not used during training. Calculate metrics such as mean squared error, R-squared, and correlation coefficients to measure the accuracy of the model's predictions.
  
- ## Results
-
-
-
-
-
-
-
-
-The next step was to assemble the architecture of the deep learning model. In this project, we used Keras, a deep learning API from TensorFlow 2. Our input layer included the independent variables like loan amount and credit scores. We created two hidden layers with 495 and 297 nodes, respectively.  Finally, our out put layer consists of a single node; the output of this node is the predicted value of the dependent variable - in this case, interest rate. 
-
--model selection
-
-model run through 5 epochs
-
- # **Some more of Machine Learning**
-  ## Creating a 3D-Scatter with the PCA data and the clusters
+ ## **Some more of Machine Learning**
+  ### Creating a 3D-Scatter with the PCA data and the clusters
   ### Using PCA to reduce dimension to three principal components.
  ![image](https://user-images.githubusercontent.com/112348240/223311768-ec353c36-00c8-4d3d-9d80-0142fa42acc5.png)
 
@@ -92,6 +44,11 @@ model run through 5 epochs
  ![image](https://user-images.githubusercontent.com/112348240/223312125-666ed200-f12f-4b0a-b7a7-9938fb66585d.png)
 
 ## Results
+The next step was to assemble the architecture of the deep learning model. In this project, we used Keras, a deep learning API from TensorFlow 2. Our input layer included the independent variables like loan amount and credit scores. We created two hidden layers with 495 and 297 nodes, respectively.  Finally, our out put layer consists of a single node; the output of this node is the predicted value of the dependent variable - in this case, interest rate. 
+
+-**Model Selection**
+
+model run through 5 epochs
 ![model evaluation]
 
 y-intercept: 0.011
@@ -151,8 +108,22 @@ Coefficients
 
 ![image](https://user-images.githubusercontent.com/112505962/223301247-13e337eb-1a77-4081-b6cf-5b72a3988893.png)
 
+
+## Projectory
  
- ![image](https://user-images.githubusercontent.com/112348240/222617620-6986d9bc-d574-4d47-aefb-63b4b772277c.png)
+ 
+ 
+ 
+ This file should always reflect the current status of the project, any specific needs or challenges that exist, and the plans for future work. Make sure to inclue links to your data, your slide deck, and any other important references
+ 
+ 
+ 
+ ![mortgage_data](https://github.com/gasconma1960/Final-Project-Mortgage-Rate-Genie/blob/main/Pics/mortgage_interest_big.png)
+ 
+ 
+ 
+ 
+ ![credit_score](https://github.com/gasconma1960/Final-Project-Mortgage-Rate-Genie/blob/main/Pics/credit_score.png)
  
  ## Visualization
  
@@ -160,7 +131,28 @@ Coefficients
  
  [Gif image](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZWM5Y2VlOTkzZTU0NTZlN2VjNzRkNWM5NDYzNGM1ZWEyZTlmZjk2NyZjdD1n/1WSdNroJ9bS4YduyU1/giphy.gif)
  
+ ## Status of The Project
+   - ETL Complete
+   
+   - Machine Learning in Process
+   
+   - Develope the Web Page in Process
+   
+   - Final Presentation not started yet
+   
+ ## **Sources**
+ - Machine Learning 
+ 
+ - Database
+ 
+ - HTML
+ 
+ - CSS
+ 
+ - JS
+ 
  ## **Final Project**
  
  ## **UCF Bootcamp Data Analytics and Visualization**
-
+ By: Christy, Marisol, Stephanie, Maria & Omie
+  ![image](https://user-images.githubusercontent.com/112348240/222617620-6986d9bc-d574-4d47-aefb-63b4b772277c.png)
