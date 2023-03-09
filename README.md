@@ -2,7 +2,6 @@
  Predict the interes rate using different Machine Learning
  By: Christy, Marisol, Stephanie, Maria & Omie
 
-
 ## Overview
 
 Our purpose for this assignment is to be able to help users predict their mortgage interest rates based off income, debt to income, credit score and other contributing factors. The process of buying a house can be stressful but rewarding and we want users to feel they can have an accurate calculation based on the market
