@@ -82,15 +82,28 @@
 		<form action="/predict" method="post">
 			<label for="loan_amount">Loan Amount:</label>
 			<input type="text" id="loan_amount" name="loan_amount"required><br><br>
+			
+			<label for="down-payment">Down Payment:</label>
+			<input type="number" id="down-payment" name="down-payment" required><br><br>
 
 			<label for="loan_term">Loan Term(in years):</label>
 			<input type="number" id="loan_term" name="loan_term"required><br><br>
 
-			<label for="credit-score">Credit Score:</label>
+			<!-- <label for="credit-score">Credit Score:</label>
   			<input type="number" id="credit-score" name="credit-score" required><br><br>
-			
-			<label for="down-payment">Down Payment:</label>
-			<input type="number" id="down-payment" name="down-payment" required><br><br>
+			 -->
+			<!-- <label for="property-type">Property Type:</label> -->
+			  <!-- <select id="property-type" name="property-type" required>
+				<!-- <option value="">Select property type</option>
+				<option value="house">House</option>
+				<option value="apartment">Apartment</option>
+				<option value="condo">Condo</option>
+				<option value="townhouse">Townhouse</option>
+				<option value="other">Other</option>
+			</select> -->
+				
+			<!-- <label for="interest-rate-">Interest Rate:</label>
+			<input type="number" id="interest-rate" name="interest-rate required><br><br> -->
 
 		<input type="submit" value="Calculate Mortgage Rate">
 	</form>
@@ -126,6 +139,8 @@
 	<script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
 
 <!-- Custom scripts for this template -->
+	<!-- <script src="js/mortgage.js"></script> -->
+	<script src="js/mortgage monthly payment.js"></script>
 	<script src="js/creative.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
  	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
