@@ -1,8 +1,8 @@
 # Final-Project-Mortgage-Rate -Genie
- Predict the interes rate using different Machine Learning
  ![image](https://user-images.githubusercontent.com/112348240/222618055-59e1b13b-2416-44a8-aec8-f72cd7ed904c.png)
 
 ## Overview
+
 In this project, we aim to develop a model that can accurately predict mortgage interest rates based on a variety of factors. Mortgage interest rates play a critical role in the housing market, affecting everything from affordability for homebuyers to the profitability of real estate investments. 
 
 ## Data Collection
@@ -25,6 +25,24 @@ Another assumption of linear regression is that there is no multicollinearity. I
 ![Data Heatmap](https://github.com/gasconma1960/Final-Project-Mortgage-Rate-Genie/blob/Christy/data_heatmap.png)
 
 One-hot encoding identifies all unique column values and splits the single categorical column into a series of columns, each containing information about a single unique categorical value.
+
+The next step was to assemble the architecture of the deep learning model. In this project, we used Keras, a deep learning API from TensorFlow 2. Our input layer included the independent variables like loan amount and credit scores. We created two hidden layers with 495 and 275 nodes, respectively. As a rule of thumb, hidden layers should have 2/3 the number of neurons as the input features. Finally, our out put layer consists of a single node; the output of this node is the predicted value of the dependent variable - in this case, interest rate. 
+
+
+ReLu function is good for looking at positive, nonlinear regression or classification data
+
+Train the model: Split the dataset into training and validation sets and train the model on the training set using stochastic gradient descent or another optimization algorithm. Use the validation set to monitor the performance of the model and adjust its parameters as necessary.
+
+Evaluate the model: Once the model is trained, evaluate its performance on a test set of data that was not used during training. Calculate metrics such as mean squared error, R-squared, and correlation coefficients to measure the accuracy of the model's predictions.
+ 
+ ## Results
+
+
+
+
+
+
+
 
 The next step was to assemble the architecture of the deep learning model. In this project, we used Keras, a deep learning API from TensorFlow 2. Our input layer included the independent variables like loan amount and credit scores. We created two hidden layers with 495 and 297 nodes, respectively.  Finally, our out put layer consists of a single node; the output of this node is the predicted value of the dependent variable - in this case, interest rate. 
 
