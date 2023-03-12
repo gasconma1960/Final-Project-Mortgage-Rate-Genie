@@ -13,6 +13,15 @@ The first component of our project was to find a dataset that included mortgage 
 ChatGPT gave us code that would create a 1000-row dataframe with interest rates and multiple factors that influence interest rate. 
 
  ## Analysis
+ 
+Why did you choose this model?
+How will you train the model?
+What’s the accuracy of the model?
+How does the model work?
+If statistics are involved, which ones will the analysis include, and why?
+What would you include or change if you had more time?
+ 
+
 Deep learning models can identify patterns, determine severity, and adapt to changing input data from a wide variety of data sources. Neural networks are effective at detecting complex, nonlinear relationships. Additionally, neural networks have greater tolerance for messy data and can learn to ignore noisy characteristics in data. 
 Multiple linear regression is a statistical method that analyzes the relationship between multiple independent variables (also known as "predictors") and a dependent variable (also known as the "outcome" or "response"). In our case, the dependent variable is interest rate, and we're exploring a range of different independent variables that could be related to interest rates, such as credit score, loan amount, employment length.
  
