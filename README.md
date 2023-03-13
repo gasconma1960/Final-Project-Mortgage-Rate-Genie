@@ -41,46 +41,27 @@ The first step in our analysis was to gather and preprocess the dataset. Becuase
 
 ![Data Histogram](https://github.com/gasconma1960/Final-Project-Mortgage-Rate-Genie/blob/Christy/data_histogram.png)
 
+Then, we plotted our data to look for outliers that may be influencing the distribution.
+
+![Data Boxplot](https://github.com/gasconma1960/Final-Project-Mortgage-Rate-Genie/blob/Christy/data_boxplots.png)
+
 Another assumption of linear regression is that there is no multicollinearity. In other words, independent variables are not highly correlated with each other. A heat map of our continous variables shows that the independent variables are not highly correlated with each other.
 
 ![Data Heatmap](https://github.com/gasconma1960/Final-Project-Mortgage-Rate-Genie/blob/Christy/data_heatmap.png)
 
 One-hot encoding identifies all unique column values and splits the single categorical column into a series of columns, each containing information about a single unique categorical value.
+-model selection
 
-The next step was to assemble the architecture of the deep learning model. In this project, we used Keras, a deep learning API from TensorFlow 2. Our input layer included the independent variables like loan amount and credit scores. We created two hidden layers with 495 and 275 nodes, respectively. As a rule of thumb, hidden layers should have 2/3 the number of neurons as the input features. Finally, our out put layer consists of a single node; the output of this node is the predicted value of the dependent variable - in this case, interest rate. 
+The next step was to assemble the architecture of the deep learning model. In this project, we used Keras, a deep learning API from TensorFlow 2. Our input layer included the independent variables like loan amount and credit scores. We created two hidden layers with 495 and 297 nodes, respectively. As a rule of thumb, hidden layers should have 2/3 the number of neurons as the input features. Finally, our out put layer consists of a single node; the output of this node is the predicted value of the dependent variable - in this case, interest rate. 
 
 
 ReLu function is good for looking at positive, nonlinear regression or classification data
 
 Train the model: Split the dataset into training and validation sets and train the model on the training set using stochastic gradient descent or another optimization algorithm. Use the validation set to monitor the performance of the model and adjust its parameters as necessary.
-
-Evaluate the model: Once the model is trained, evaluate its performance on a test set of data that was not used during training. Calculate metrics such as mean squared error, R-squared, and correlation coefficients to measure the accuracy of the model's predictions.
- 
- ## Results
-
-
-
-
-
-
-
-
-The next step was to assemble the architecture of the deep learning model. In this project, we used Keras, a deep learning API from TensorFlow 2. Our input layer included the independent variables like loan amount and credit scores. We created two hidden layers with 495 and 297 nodes, respectively.  Finally, our out put layer consists of a single node; the output of this node is the predicted value of the dependent variable - in this case, interest rate. 
-
--model selection
-
 model run through 5 epochs
 
- # **Some more of Machine Learning**
-  ## Creating a 3D-Scatter with the PCA data and the clusters
-  ### Using PCA to reduce dimension to three principal components.
- ![image](https://user-images.githubusercontent.com/112348240/223311768-ec353c36-00c8-4d3d-9d80-0142fa42acc5.png)
-
-  ### Create a hvplot.scatter plot using y="Loan Amount" and x="Interest Rate".
- ![image](https://user-images.githubusercontent.com/112348240/223312125-666ed200-f12f-4b0a-b7a7-9938fb66585d.png)
-
 ## Results
-![model evaluation]
+Evaluate the model: Once the model is trained, evaluate its performance on a test set of data that was not used during training. Calculate metrics such as mean squared error, R-squared, and correlation coefficients to measure the accuracy of the model's predictions.
 
 y-intercept: 0.011
 
@@ -94,8 +75,26 @@ Coefficients
     (Property Type_Single-Family): -0.100
     (Property Typer_Townhouse): 0.087
 
+![model evaluation]
+
 ## Discussion
 -Limitations/shortcomings of deep learning model - cannot determine feature weight
+
+
+ # **Some more of Machine Learning**
+  ## Creating a 3D-Scatter with the PCA data and the clusters
+  ### Using PCA to reduce dimension to three principal components.
+ ![image](https://user-images.githubusercontent.com/112348240/223311768-ec353c36-00c8-4d3d-9d80-0142fa42acc5.png)
+
+  ### Create a hvplot.scatter plot using y="Loan Amount" and x="Interest Rate".
+ ![image](https://user-images.githubusercontent.com/112348240/223312125-666ed200-f12f-4b0a-b7a7-9938fb66585d.png)
+
+
+
+
+
+
+
 
 ## **Communication Channels use for The Project**
 - Slack
