@@ -10,7 +10,19 @@ The first component of our project was to find a dataset that included mortgage 
 
 "I need a data set for mortgage interest rates. I need a variety of factors that would determine interest rates of a mortgage, preferebly 10 or more. Can you create a data set for me that is at least 1000 rows"
 
-ChatGPT gave us code that would create a 1000-row dataframe with interest rates and multiple factors that influence interest rate. 
+ChatGPT gave us code that would create a 1000-row dataframe with interest rates and multiple 12 features that can potentially influence interest rates. The features included in our dataset are as follows:
+* Loan Amount: the amount of money borrowed for a mortgage
+* Credit Score: a numerical representation of a borrower's creditworthiness, based on their credit history
+* Property Value: The appraised value of the property being mortgaged. 
+* Loan-to-value Ratio: The ratio of the loan amount to the property value
+* Loan Term: The length of time (in years) over which the mortgage is repaid
+* Employment Length: The length of time the borrower has been employed
+* Loan Type: The type of property being mortgaged (single-family, multi-family, townhouse)
+* State: The state in which the property is located
+* Debt-to-Income-Ratio: The ration of the borrower's monthly debt payments to their monthly income
+* Down Payment: The amount of money the borrower puts down on the property
+* Income: The borrower's income
+* Occupancy Type: Whether the property will be owner-occupied or used as a rental property 
 
  ## Analysis
  
