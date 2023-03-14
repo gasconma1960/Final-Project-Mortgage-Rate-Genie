@@ -24,20 +24,10 @@ ChatGPT gave us code that would create a 1000-row dataframe with interest rates 
 * Income: The borrower's income
 * Occupancy Type: Whether the property will be owner-occupied or used as a rental property 
 
- ## Analysis
- 
-Why did you choose this model?
-How will you train the model?
-What’s the accuracy of the model?
-How does the model work?
-If statistics are involved, which ones will the analysis include, and why?
-What would you include or change if you had more time?
- 
+## Analysis
+Multiple linear regression is a widely used statistical technique for modeling the relationship between a dependent variable (in this case, interest rates) and multiple independent variables (such as loan amount, credit score, property value, etc.). A multiple linear regression model provides interpretable coefficients taht indicate the direction and strength of the relationship between each feature and the target variable. 
 
-Deep learning models can identify patterns, determine severity, and adapt to changing input data from a wide variety of data sources. Neural networks are effective at detecting complex, nonlinear relationships. Additionally, neural networks have greater tolerance for messy data and can learn to ignore noisy characteristics in data. 
-Multiple linear regression is a statistical method that analyzes the relationship between multiple independent variables (also known as "predictors") and a dependent variable (also known as the "outcome" or "response"). In our case, the dependent variable is interest rate, and we're exploring a range of different independent variables that could be related to interest rates, such as credit score, loan amount, employment length.
- 
-The first step in our analysis was to gather and preprocess the dataset. Becuase we created our own dataset, it was already clean, complete, and in a suitable format for analysis.  One of the underlying assumptions of linear regression is that data features are normally distributed. The code that created our dataset chose numbers randomly between a certain range of values. Looking at our continuous variables, we see that they are not normally distributed:
+We began our analysis by cleaning and scaling the data as necessary. The code that created our dataset chose numbers randomly between a certain range of values. Looking at our continuous variables, we see that they are not normally distributed:
 
 ![Data Histogram](https://github.com/gasconma1960/Final-Project-Mortgage-Rate-Genie/blob/Christy/data_histogram.png)
 
@@ -49,16 +39,7 @@ Another assumption of linear regression is that there is no multicollinearity. I
 
 ![Data Heatmap](https://github.com/gasconma1960/Final-Project-Mortgage-Rate-Genie/blob/Christy/data_heatmap.png)
 
-One-hot encoding identifies all unique column values and splits the single categorical column into a series of columns, each containing information about a single unique categorical value.
--model selection
-
-The next step was to assemble the architecture of the deep learning model. In this project, we used Keras, a deep learning API from TensorFlow 2. Our input layer included the independent variables like loan amount and credit scores. We created two hidden layers with 495 and 297 nodes, respectively. As a rule of thumb, hidden layers should have 2/3 the number of neurons as the input features. Finally, our out put layer consists of a single node; the output of this node is the predicted value of the dependent variable - in this case, interest rate. 
-
-
-ReLu function is good for looking at positive, nonlinear regression or classification data
-
-Train the model: Split the dataset into training and validation sets and train the model on the training set using stochastic gradient descent or another optimization algorithm. Use the validation set to monitor the performance of the model and adjust its parameters as necessary.
-model run through 5 epochs
+After cleaning the data, we split it into training and testing sets. Afterwards, we scaled each dataset using MinMaxScaler. Finally, we built our model using ordinary least squares to fit a linear equation to the training data that best describes the relationship between the independent variables and the dependent variable. The coefficients of the equation represent the magnitude and direction of the effect of each independent variable on the dependent variable.
 
 ## Results
 Evaluate the model: Once the model is trained, evaluate its performance on a test set of data that was not used during training. Calculate metrics such as mean squared error, R-squared, and correlation coefficients to measure the accuracy of the model's predictions.
@@ -79,7 +60,7 @@ Coefficients
 
 ## Discussion
 -Limitations/shortcomings of deep learning model - cannot determine feature weight
-
+Model Evaluation: You would evaluate the performance of the model using statistical metrics such as the R-squared value, the mean squared error, and the root mean squared error. These metrics help to assess how well the model fits the training data and how well it is likely to perform on new data.
 
  # **Some more of Machine Learning**
   ## Creating a 3D-Scatter with the PCA data and the clusters
