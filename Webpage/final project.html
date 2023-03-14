@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mortgage Rate</title>
+    <style>
+        body{
+            background-image:url(https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmExNmVkYzg3MDFhNzkxMGNmODM1ZGE1NDk1NTA4MTYyNWJmMDZhOCZjdD1n/QmNuYxDZgxXAEobjLZ/giphy.gif);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        button{
+            padding: 7% 36%;
+            background-color: #3399ff;
+            color: red;
+            border: none;
+            margin-left: 1;
+            margin: 8px 0;
+            cursor: pointer;
+            width: 120%;
+        }
+        form{
+        left: 50%;
+        top: 40%;
+        margin-left: -10%;
+        position: absolute;
+        margin-top: -10%;
+
+        }
+        input[type=text] input[type=text] {
+        width: 120%;
+        padding: 20px, 20px;
+        margin: 8px, 0;
+        display: inline-block;
+        border: 1px solid#ccc;
+        box-sizing: border-box;
+    }
+    input[type=submit] {
+        width: 85%;
+    }
+    h1{
+        color: blueviolet;
+    }
+    </style>
+</head>
+<body>
+    
+    <form action="/predict" method="post">
+      <h1>The Mortgage Rate Genie</h1>
+      <label for="item1">Item 1:</label>
+      <input type="text" id="item1" name="item1"><br><br>
+      
+      <label for="item2">Item 2:</label>
+      <input type="text" id="item2" name="item2"><br><br>
+      
+      <label for="item3">Item 3:</label>
+      <input type="text" id="item3" name="item3"><br><br>
+      
+      <input type="submit" value="Submit">
+      <h1>Enter Data for Prediction</h1>
+    </form>
+</body>
+</html>
+
+
+
+
