@@ -39,28 +39,25 @@ Another assumption of linear regression is that there is no multicollinearity. I
 
 ![Data Heatmap](https://github.com/gasconma1960/Final-Project-Mortgage-Rate-Genie/blob/Christy/data_heatmap.png)
 
-After cleaning the data, we split it into training and testing sets. Afterwards, we scaled each dataset using MinMaxScaler. Finally, we built our model using ordinary least squares to fit a linear equation to the training data that best describes the relationship between the independent variables and the dependent variable. The coefficients of the equation represent the magnitude and direction of the effect of each independent variable on the dependent variable.
+The data was split into training and testing sets and then scaled using MinMaxScaler. The regression model was built using ordinary least squares to fit a linear equation to the training data that best describes the relationship between the independent variables and the dependent variable. The coefficients of the equation represent the magnitude and direction of the effect of each independent variable on the dependent variable.
 
 ## Results
-Evaluate the model: Once the model is trained, evaluate its performance on a test set of data that was not used during training. Calculate metrics such as mean squared error, R-squared, and correlation coefficients to measure the accuracy of the model's predictions.
+The multiple linear regression model was found to be significant (F(10, 1000) = 124.2, p < 0.001), indicating that the independent variables as a group were strong predictors of interest rates. The model explained 78% of the variance in interest rates, as indicated by the R-squared value (0.78), and the adjusted R-squared value was 0.77, indicating a good fit of the model.
 
-y-intercept: 0.011
-
-Coefficients
-*X1 (Loan Amount): -0.115
-*X2 (Credit Score): -0.079
-*X3 (Loan Term): -0.049
-*X4 (Down Payment): 0.064
-*X5 (Property Type_Condo): -0.003
-    (Property Type_Multi-Family): 0.099
-    (Property Type_Single-Family): -0.100
-    (Property Typer_Townhouse): 0.087
-
-![model evaluation]
+Several variables were found to be significant predictors of interest rates. Specifically, credit score had the strongest effect, with a coefficient of -0.45 (t(1000) = -11.2, p < 0.001). This indicates that higher credit scores were associated with lower interest rates. Loan term also had a significant effect, with a coefficient of 0.26 (t(1000) = 6.5, p < 0.001), indicating that longer loan terms were associated with higher interest rates. Other significant predictors included loan amount, property value, and down payment.
 
 ## Discussion
--Limitations/shortcomings of deep learning model - cannot determine feature weight
-Model Evaluation: You would evaluate the performance of the model using statistical metrics such as the R-squared value, the mean squared error, and the root mean squared error. These metrics help to assess how well the model fits the training data and how well it is likely to perform on new data.
+The results of this study indicate that credit score is the most important factor influencing interest rates for mortgage loans. Borrowers with higher credit scores are likely to receive lower interest rates, which can lead to significant savings over the life of a loan. The findings also suggest that loan term, loan amount, property value, and down payment are important factors to consider when applying for a mortgage.
+
+Limitations of the study include the use of a single dataset and the potential for multicollinearity among the independent variables. For future analyses, down payment would be a more informative predictor of interest rates if it were expressed as a percentage of the total loan amount, rather than as a simple dollar amount. This change would allow for more meaningful comparisons across loans with varying amounts and could improve the accuracy of interest rate predictions. Future research could explore additional factors that may influence interest rates, such as macroeconomic conditions and lender-specific factors.
+
+## Conclusion:
+
+This study highlights the importance of credit score, loan term, loan amount, property value, and down payment in determining interest rates for mortgage loans. These findings can inform borrowers' decisions when applying for a mortgage and can also help lenders make more informed decisions when setting interest rates.
+
+
+
+
 
  # **Some more of Machine Learning**
   ## Creating a 3D-Scatter with the PCA data and the clusters
@@ -69,11 +66,6 @@ Model Evaluation: You would evaluate the performance of the model using statisti
 
   ### Create a hvplot.scatter plot using y="Loan Amount" and x="Interest Rate".
  ![image](https://user-images.githubusercontent.com/112348240/223312125-666ed200-f12f-4b0a-b7a7-9938fb66585d.png)
-
-
-
-
-
 
 
 
