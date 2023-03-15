@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mortgage Rate Genie</title>
+    <link rel="stylesheet" href="style 2.css" />
+</head>
+<body>
+    <div class="Mortgage-Rate-Genie">
+        <div class="top">
+            <h2>Mortgage Rate Genie</h2>
+            <style>
+                body {
+                    background-image: url(https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmExNmVkYzg3MDFhNzkxMGNmODM1ZGE1NDk1NTA4MTYyNWJmMDZhOCZjdD1n/QmNuYxDZgxXAEobjLZ/giphy.gif);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+            </style>
+            <div id="gauge"></div>
+
+            <script src="https://cdn.jsdelivr.net/gh/toorshia/justgage@1.2.2/raphael-2.1.4.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/gh/toorshia/justgage@1.2.2/justgage.min.js"></script>
+            
+            <script>
+               var gauge = new JustGage({
+                id: "gauge",
+                value: 67,
+                min: 0,
+                max: 100,
+                title: "Average Rate",
+                label: "%",
+                gaugeWidthScale: 0.6,
+                counter: true,
+                relativeGaugeSize: true,
+                levelColors: [
+                  "#FF0000",
+                  "#F9C802",
+                  "#A9D70B"
+                ]
+              });
+              
+            </script>
+            
+            <div class="input-container">
+                <form action="#">
+                    <div class="group">
+                        <div class="title">Loan Amount</div>
+                        <input type="text" class="loan-amount" value="400000"step="0.01"/>    
+                    </div>
+
+                    <div class="group">
+                        <div class="title">Down Payment</div>
+                        <input type="text" class="down-payment"/>    
+                    </div>
+
+                    <div class="group">
+                        <div class="title">Loan Term (Years)</div>
+                        <input type="number" class="loan-term" value="30"/> 
+                    </div>
+
+                    <div class="group">
+                        <div class="title">Credit Score</div>
+                        <input type="text" class="credit-score" value="850"/>    
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="results">
+            <div class="left">
+                <div class="loan-amount">
+                    <h3>Loan Amount</h3>
+                    <div class="value">123</div>
+                </div>
+            </div>
+
+            <div class="right">
+                <div class="total-interest">
+                    <h3>Total Interest Payable</h3>
+                    <div class="value">1234</div>
+                </div>
+            </div>
+
+            <div class="right">
+                <div class="total-amount">
+                    <h3>Total Amount</h3>
+                    <div class="value">12345</div>
+                </div>
+                <button class="calculate-btn">Calculate</button>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4 col-sm-12">
+                    <form>
+                        <div class="form-group">
+                            <label for="interest-rate">Interest Rate (%)</label>
+                            <input type="number" class="form-control" id="interest-rate" value="7">
+                    </form>
+                </div>
+                <div class="col-md-8 col-sm-12">
+                    <div id="mortgage"></div>
+                    <div id="gauge"></div>
+                </div>
+            </div>
+        </div>   
+        <div class="gauge-container">
+            <div class="col-md-5">
+                <div id="gauge"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

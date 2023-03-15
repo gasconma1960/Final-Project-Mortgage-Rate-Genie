@@ -1,0 +1,121 @@
+.Mortgage-Rate-Genie {
+  font-family: "Rotoco", sans-serif;
+  width: 1000px;
+  margin: 24px auto;
+  background: #fff;
+  box-shadow: 0 12px 50px -11px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  color: #14213d;
+  overflow: hidden;
+}
+
+.Mortgage-Rate-Genie,
+.Mortgage-Rate-Genie * {
+  box-sizing: border-box;
+}
+
+.Mortgage-Rate-Genie .top {
+  background: #14213d;
+  color: #fff;
+  padding: 32px;
+  margin-bottom: 24px
+}
+
+.Mortgage-Rate-Genie .top h2 {
+  margin-top: 0;
+}
+
+.Mortgage-Rate-Genie form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.Mortgage-Rate-Genie .title {
+  margin-bottom: 32px;
+}
+
+.Mortgage-Rate-Genie form input {
+  font-size: 20px;
+  padding: 8px 24px;
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.Mortgage-Rate-Genie .results {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 24px;
+}
+
+.Mortgage-Rate-Genie .results .right {
+  flex-basis: calc(50% - 8px);
+  margin-bottom: 24px;
+}
+
+.Mortgage-Rate-Genie .results .right h3 {
+  font-size: 20px;
+  font-weight: 400;
+  padding: 8px 32px;
+  border-bottom: 1px solid rgba(61, 45, 51, 0.2);
+}
+
+.Mortgage-Rate-Genie .results .value {
+  font-size: 20px;
+  font-weight: 500;
+  padding: 8px 32px;
+  border-bottom: 1px solid rgba(61, 45, 51, 0.2);
+}
+
+.Mortgage-Rate-Genie .results .value::before {
+  font-size: 20px;
+  font-weight: 400;
+  margin-right: 6px;
+  padding: 8px 32px;
+  border-bottom: 1px solid rgba(61, 45, 51, 0.2);
+  opacity: 0.4;
+}
+
+.Mortgage-Rate-Genie .calculate-btn {
+  background: #e63946;
+  color: #fff;
+  border: none;
+  padding: 8px 32px;
+  border-radius: 8px;
+  font-size: 24px;
+  font-weight: 900;
+  display: inline-flexbox;
+  cursor: pointer;
+  margin-bottom: 32px 0;
+}
+
+.calculator-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input-container,
+.result-container {
+  width: 45%;
+}
+
+@media (max-width: 1000px) {
+  .Mortgage-Rate-Calculator {
+  width: 90%;
+  max-width: 500px;
+  }
+  
+  .Mortgage-Rate-Genie form {
+  flex-direction: column;
+  gap: 20px;
+  }
+  
+  .Mortgage-Rate-Genie .results {
+  flex-direction: column;
+  text-align: center;
+  }
+  }
