@@ -77,21 +77,26 @@ Then, we plotted our data to look for outliers that may be influencing the distr
 
 **Evaluate the model:**
  Once the model is trained, evaluate its performance on a test set of data that was not used during training. Calculate metrics such as mean squared error, R-squared, and correlation coefficients to measure the accuracy of the model's predictions.
- 
-**Creating a 3D-Scatter with the PCA data and the clusters**
 
-Data Boxplot
+**Data Boxplot**
 ![Data Boxplot](https://github.com/gasconma1960/Final-Project-Mortgage-Rate-Genie/blob/Christy/data_boxplots.png)
 
 Another assumption of linear regression is that there is no multicollinearity. In other words, independent variables are not highly correlated with each other. A heat map of our continous variables shows that the independent variables are not highly correlated with each other.
 
-Data Heatmap
+**Data Heatmap**
 ![Data Heatmap](https://github.com/gasconma1960/Final-Project-Mortgage-Rate-Genie/blob/Christy/data_heatmap.png)
 
-The data was split into training and testing sets and then scaled using MinMaxScaler. The regression model was built using ordinary least squares to fit a linear equation to the training data that best describes the relationship between the independent variables and the dependent variable. The coefficients of the equation represent the magnitude and direction of the effect of each independent variable on the dependent variable.
+The data was split into training and testing sets and then scaled using MinMaxScaler. The regression model was built using ordinary least squares to fit a linear equation to the training data that best describes the relationship between the independent variables and the dependent variable. The coefficients of the equation represent the magnitude and direction of the effect of each independent variable on the dependent variable.  ### Creating a 3D-Scatter with the PCA data and the clusters
 
+**Using PCA to reduce dimension to three principal components**
+  
+ ![image](https://user-images.githubusercontent.com/112348240/223311768-ec353c36-00c8-4d3d-9d80-0142fa42acc5.png)
 
-# **Results**
+**Create a hvplot.scatter plot using y="Loan Amount" and x="Interest Rate"**
+  
+ ![image](https://user-images.githubusercontent.com/112348240/223312125-666ed200-f12f-4b0a-b7a7-9938fb66585d.png)
+
+## **Results**
 
 - Our analysis found that the independent variables, taken together, were strong predictors of mortgage interest rates, as demonstrated by the significant F-statistic (F(11, 1000) = 110.5, p < 0.001). The model explained 79% of the variance in interest rates, with a good fit as indicated by the adjusted R-squared value of 0.78.
 
@@ -134,18 +139,6 @@ Coefficients:
 ## **Conclusion:**
  This study highlights the importance of credit score, loan term, loan amount, property value, and down payment in determining interest rates for mortgage loans. These findings can inform borrowers' decisions when applying for a mortgage and can also help lenders make more informed decisions when setting interest rates.
 
-## **Some more of Machine Learning**
-  ### Creating a 3D-Scatter with the PCA data and the clusters
-
-  ### Using PCA to reduce dimension to three principal components.
-  
- ![image](https://user-images.githubusercontent.com/112348240/223311768-ec353c36-00c8-4d3d-9d80-0142fa42acc5.png)
-
-  ### Create a hvplot.scatter plot using y="Loan Amount" and x="Interest Rate".
-  
- ![image](https://user-images.githubusercontent.com/112348240/223312125-666ed200-f12f-4b0a-b7a7-9938fb66585d.png)
-
- 
 ## **Communication Channels use for The Project**
 - Slack
 - Zoom Meeting
@@ -188,14 +181,8 @@ Coefficients:
 
 
 ![image](https://user-images.githubusercontent.com/112505962/223301247-13e337eb-1a77-4081-b6cf-5b72a3988893.png)
+ 
 
-
-## Projectory
- 
- This file should always reflect the current status of the project, any specific needs or challenges that exist, and the plans for future work. Make sure to inclue links to your data, your slide deck, and any other important references
- 
- 
- 
  ![mortgage_data](https://github.com/gasconma1960/Final-Project-Mortgage-Rate-Genie/blob/main/Pics/mortgage_interest_big.png)
  
   
