@@ -12,7 +12,12 @@ The first component of our project was to find a dataset that included mortgage 
 
 ChatGPT gave us code that would create a 1000-row dataframe with interest rates and multiple factors that influence interest rate. 
 
- ## Analysis
+## **ETL Process**
+
+![image](https://user-images.githubusercontent.com/112348240/225435410-b382ee02-8cd3-4397-a1ea-833920507569.png)
+
+## **Analysis using Different Machine Learning Models**
+
 Deep learning models can identify patterns, determine severity, and adapt to changing input data from a wide variety of data sources. Neural networks are effective at detecting complex, nonlinear relationships. Additionally, neural networks have greater tolerance for messy data and can learn to ignore noisy characteristics in data. 
 Multiple linear regression is a statistical method that analyzes the relationship between multiple independent variables (also known as "predictors") and a dependent variable (also known as the "outcome" or "response"). In our case, the dependent variable is interest rate, and we're exploring a range of different independent variables that could be related to interest rates, such as credit score, loan amount, employment length.
  
@@ -24,25 +29,28 @@ Another assumption of linear regression is that there is no multicollinearity. I
 
 ![Data Heatmap](https://github.com/gasconma1960/Final-Project-Mortgage-Rate-Genie/blob/Christy/data_heatmap.png)
 
-One-hot encoding identifies all unique column values and splits the single categorical column into a series of columns, each containing information about a single unique categorical value.
+**One-hot encoding** identifies all unique column values and splits the single categorical column into a series of columns, each containing information about a single unique categorical value.
 
 The next step was to assemble the architecture of the deep learning model. In this project, we used Keras, a deep learning API from TensorFlow 2. Our input layer included the independent variables like loan amount and credit scores. We created two hidden layers with 495 and 275 nodes, respectively. As a rule of thumb, hidden layers should have 2/3 the number of neurons as the input features. Finally, our out put layer consists of a single node; the output of this node is the predicted value of the dependent variable - in this case, interest rate. 
 
+**ReLu function** is good for looking at positive, nonlinear regression or classification data
 
-ReLu function is good for looking at positive, nonlinear regression or classification data
+**Train the model:**
+ Split the dataset into training and validation sets and train the model on the training set using stochastic gradient descent or another optimization algorithm. Use the validation set to monitor the performance of the model and adjust its parameters as necessary.
 
-Train the model: Split the dataset into training and validation sets and train the model on the training set using stochastic gradient descent or another optimization algorithm. Use the validation set to monitor the performance of the model and adjust its parameters as necessary.
-
-Evaluate the model: Once the model is trained, evaluate its performance on a test set of data that was not used during training. Calculate metrics such as mean squared error, R-squared, and correlation coefficients to measure the accuracy of the model's predictions.
+**Evaluate the model:**
+ Once the model is trained, evaluate its performance on a test set of data that was not used during training. Calculate metrics such as mean squared error, R-squared, and correlation coefficients to measure the accuracy of the model's predictions.
  
- ## Results
+**Creating a 3D-Scatter with the PCA data and the clusters**
+  ### Using PCA to reduce dimension to three principal components.
+  
+ ![image](https://user-images.githubusercontent.com/112348240/223311768-ec353c36-00c8-4d3d-9d80-0142fa42acc5.png)
 
+  ### Create a hvplot.scatter plot using y="Loan Amount" and x="Interest Rate".
+  
+ ![image](https://user-images.githubusercontent.com/112348240/223312125-666ed200-f12f-4b0a-b7a7-9938fb66585d.png)
 
-
-
-
-
-
+## **Results**
 
 The next step was to assemble the architecture of the deep learning model. In this project, we used Keras, a deep learning API from TensorFlow 2. Our input layer included the independent variables like loan amount and credit scores. We created two hidden layers with 495 and 297 nodes, respectively.  Finally, our out put layer consists of a single node; the output of this node is the predicted value of the dependent variable - in this case, interest rate. 
 
@@ -50,15 +58,6 @@ The next step was to assemble the architecture of the deep learning model. In th
 
 model run through 5 epochs
 
- # **Some more of Machine Learning**
-  ## Creating a 3D-Scatter with the PCA data and the clusters
-  ### Using PCA to reduce dimension to three principal components.
- ![image](https://user-images.githubusercontent.com/112348240/223311768-ec353c36-00c8-4d3d-9d80-0142fa42acc5.png)
-
-  ### Create a hvplot.scatter plot using y="Loan Amount" and x="Interest Rate".
- ![image](https://user-images.githubusercontent.com/112348240/223312125-666ed200-f12f-4b0a-b7a7-9938fb66585d.png)
-
-## Results
 ![model evaluation]
 
 y-intercept: 0.011
@@ -73,8 +72,9 @@ Coefficients
     (Property Type_Single-Family): -0.100
     (Property Typer_Townhouse): 0.087
 
-## Discussion
--Limitations/shortcomings of deep learning model - cannot determine feature weight
+## **Discussion**
+- Limitations/shortcomings of deep learning model - cannot determine feature weight
+- Using Machine Learning and apply to develop to the website wasn't the best approach so we decide to go an Create a Webpage using html, css and JavaScript for
 
 ## **Communication Channels use for The Project**
 - Slack
@@ -113,7 +113,6 @@ Coefficients
 
 
 ![down payment summary](https://user-images.githubusercontent.com/112505962/223246491-9395ea03-1d37-4281-8218-ef9cbb23be6e.png)
-
 
 
 ![image](https://user-images.githubusercontent.com/112505962/223301247-13e337eb-1a77-4081-b6cf-5b72a3988893.png)
