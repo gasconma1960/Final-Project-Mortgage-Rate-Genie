@@ -136,18 +136,7 @@ Coefficients:
  
 - Using Machine Learning and apply to develop to the website wasn't the best approach so we decide to go an Create a Webpage using html, css and JavaScript for
 
-## **Conclusion:**
- This study highlights the importance of credit score, loan term, loan amount, property value, and down payment in determining interest rates for mortgage loans. These findings can inform borrowers' decisions when applying for a mortgage and can also help lenders make more informed decisions when setting interest rates.
-
-## **Communication Channels use for The Project**
-- Slack
-- Zoom Meeting
-- WhatsApp
-- Microsoft Teams Meeting
-
-# **Appendix**
-
-## **Data summary tables created using pgAdmin4 for SQL**
+## **SQL PgAdmin use to Create our Tables**
 
 **Credit Scores criteria 600-699**
 ![CS1](https://user-images.githubusercontent.com/112505962/223245228-70c80f0a-66bf-4d36-afe6-ee27eca1664b.png)
@@ -188,6 +177,15 @@ Coefficients:
   
  ![credit_score](https://github.com/gasconma1960/Final-Project-Mortgage-Rate-Genie/blob/main/Pics/credit_score.png)
  
+## **Conclusion:**
+ This study highlights the importance of credit score, loan term, loan amount, property value, and down payment in determining interest rates for mortgage loans. These findings can inform borrowers' decisions when applying for a mortgage and can also help lenders make more informed decisions when setting interest rates.
+
+## **Communication Channels use for The Project**
+- Slack
+- Zoom Meeting
+- WhatsApp
+- Microsoft Teams Meeting
+
  ## Visualization
  
  [Gif image](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmExNmVkYzg3MDFhNzkxMGNmODM1ZGE1NDk1NTA4MTYyNWJmMDZhOCZjdD1n/QmNuYxDZgxXAEobjLZ/giphy.gif)
