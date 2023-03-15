@@ -138,7 +138,7 @@ Coefficients
    
    - Develope the Web Page in Process
    
-   - Final Presentation not started yet
+   - Final Presentation has began
    
  ## **Sources**
  - Machine Learning 
