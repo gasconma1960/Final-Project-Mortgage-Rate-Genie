@@ -1,9 +1,8 @@
-# Final-Project-Mortgage-Rate -Genie
- ![image](https://user-images.githubusercontent.com/112348240/222618055-59e1b13b-2416-44a8-aec8-f72cd7ed904c.png)
+# **UCF Bootcamp Final Project - Mortgage Rate Genie**
+![image](https://user-images.githubusercontent.com/112348240/225426797-f384f519-096f-451f-a739-7635e73d2c2b.png)
 
-## Overview
-
- Our team has created a multiple linear regression model that can predict mortgage interest rates based on a range of features. To make our model user-friendly, we've built an app, the Mortgage Rate Genie, that lets users input their own data and receive a personalized prediction for their mortgage interest rate. By leveraging the power of data analytics, our model takes into account a variety of factors that lenders consider when setting interest rates, such as loan amount, credit score, property value, loan term, employment length, and more. With this information, our app can provide users with a reliable estimate of what they can expect to pay in interest over the life of their mortgage.  
+# **Overview**
+Our team has created a multiple linear regression model that can predict mortgage interest rates based on a range of features. To make our model user-friendly, we've built an app, the Mortgage Rate Genie, that lets users input their own data and receive a personalized prediction for their mortgage interest rate. By leveraging the power of data analytics, our model takes into account a variety of factors that lenders consider when setting interest rates, such as loan amount, credit score, property value, loan term, employment length, and more. With this information, our app can provide users with a reliable estimate of what they can expect to pay in interest over the life of their mortgage.
 
 ## Project Summary
 For more information about our project, please view the following presentation slides:
@@ -17,12 +16,23 @@ Link to presentation
 * Jupyter Notebook, SQL, Python 3.7
 * Packages: statsmodels, sklearn, pandas
 
-## Data Collection
+Project Summary
+For more information about our project, please view the following presentation slides:
+
+
+Resources
+Data:"mortgage_interest_rates_gpt.csv"
+ModelCode:"Mortgage_MLR"
+Jupyter Notebook, SQL, Python 3.7
+Packages: statsmodels, sklearn, pandas
+
+Data Collection
 The first component of our project was to find a dataset that included mortgage interest rates and multiple factors that influence interest rates. We decided to use ChatGPT to help design the appropriate dataset. The following was the prompt that was entered into ChatGPT:
 
 "I need a data set for mortgage interest rates. I need a variety of factors that would determine interest rates of a mortgage, preferebly 10 or more. Can you create a data set for me that is at least 1000 rows"
 
 ChatGPT gave us code that would create a 1000-row dataframe with interest rates and multiple 12 features that can potentially influence interest rates. The features included in our dataset are as follows:
+
 * Loan Amount: the amount of money borrowed for a mortgage
 * Credit Score: a numerical representation of a borrower's creditworthiness, based on their credit history
 * Property Value: The appraised value of the property being mortgaged. 
@@ -45,15 +55,35 @@ ChatGPT gave us code that would create a 1000-row dataframe with interest rates 
 
  We began our analysis by taking a close look at the data. The code that created our dataset chose numbers randomly between a certain range of values. Looking at our continuous variables, we see that they are not normally distributed:
 
-![Data Histogram](https://github.com/gasconma1960/Final-Project-Mortgage-Rate-Genie/blob/Christy/data_histogram.png)
 
-Another assumption of linear regression is that there is no multicollinearity. In other words, independent variables are not highly correlated with each other. A heat map of our continous variables shows that the independent variables are not highly correlated with each other.
+Loan Amount: the amount of money borrowed for a mortgage
+Credit Score: a numerical representation of a borrower's creditworthiness, based on their credit history
+Property Value: The appraised value of the property being mortgaged.
+Loan-to-value Ratio: The ratio of the loan amount to the property value
+Loan Term: The length of time (in years) over which the mortgage is repaid
+Employment Length: The length of time the borrower has been employed
+Loan Type: The type of property being mortgaged (single-family, multi-family, townhouse)
+State: The state in which the property is located
+Debt-to-Income-Ratio: The ration of the borrower's monthly debt payments to their monthly income
+Down Payment: The amount of money the borrower puts down on the property
+Income: The borrower's income
+Occupancy Type: Whether the property will be owner-occupied or used as a rental property
 
-![Data Heatmap](https://github.com/gasconma1960/Final-Project-Mortgage-Rate-Genie/blob/Christy/data_heatmap.png)
+Analysis
+Multiple linear regression is a widely used statistical technique for modeling the relationship between a dependent variable (in this case, interest rates) and multiple independent variables (such as loan amount, credit score, property value, etc.). A multiple linear regression model provides interpretable coefficients taht indicate the direction and strength of the relationship between each feature and the target variable.
+
+We began our analysis by taking a close look at the data. The code that created our dataset chose numbers randomly between a certain range of values. Looking at our continuous variables, we see that they are not normally distributed:
+
+Data Histogram
+
 
 **One-hot encoding** identifies all unique column values and splits the single categorical column into a series of columns, each containing information about a single unique categorical value.
 
-The next step was to assemble the architecture of the deep learning model. In this project, we used Keras, a deep learning API from TensorFlow 2. Our input layer included the independent variables like loan amount and credit scores. We created two hidden layers with 495 and 275 nodes, respectively. As a rule of thumb, hidden layers should have 2/3 the number of neurons as the input features. Finally, our out put layer consists of a single node; the output of this node is the predicted value of the dependent variable - in this case, interest rate. 
+![Data Histogram](https://github.com/gasconma1960/Final-Project-Mortgage-Rate-Genie/blob/Christy/data_histogram.png)
+
+
+Then, we plotted our data to look for outliers that may be influencing the distribution.
+
 
 **ReLu function** is good for looking at positive, nonlinear regression or classification data
 
@@ -64,6 +94,39 @@ The next step was to assemble the architecture of the deep learning model. In th
  Once the model is trained, evaluate its performance on a test set of data that was not used during training. Calculate metrics such as mean squared error, R-squared, and correlation coefficients to measure the accuracy of the model's predictions.
  
 **Creating a 3D-Scatter with the PCA data and the clusters**
+
+Data Boxplot
+![Data Boxplot](https://github.com/gasconma1960/Final-Project-Mortgage-Rate-Genie/blob/Christy/data_boxplots.png)
+
+Another assumption of linear regression is that there is no multicollinearity. In other words, independent variables are not highly correlated with each other. A heat map of our continous variables shows that the independent variables are not highly correlated with each other.
+
+Data Heatmap
+![Data Heatmap](https://github.com/gasconma1960/Final-Project-Mortgage-Rate-Genie/blob/Christy/data_heatmap.png)
+
+The data was split into training and testing sets and then scaled using MinMaxScaler. The regression model was built using ordinary least squares to fit a linear equation to the training data that best describes the relationship between the independent variables and the dependent variable. The coefficients of the equation represent the magnitude and direction of the effect of each independent variable on the dependent variable.
+
+
+# **Results**
+
+Our analysis found that the independent variables, taken together, were strong predictors of mortgage interest rates, as demonstrated by the significant F-statistic (F(11, 1000) = 110.5, p < 0.001). The model explained 79% of the variance in interest rates, with a good fit as indicated by the adjusted R-squared value of 0.78.
+
+Several individual variables were found to be significant predictors of interest rates. The strongest predictor was credit score, with higher scores associated with lower interest rates (coefficient = -0.44, t(1000) = -11.4, p < 0.001). Loan term also had a significant effect, with longer terms associated with higher interest rates (coefficient = 0.26, t(1000) = 6.7, p < 0.001). Down payment was also a significant predictor, with a coefficient of -0.13 (t(1000) = -3.4, p = 0.001), indicating that higher down payments were associated with lower interest rates. Similarly, loan amount was a significant predictor, with a coefficient of 0.21 (t(1000) = 5.3, p < 0.001), indicating that higher loan amounts were associated with higher interest rates.
+
+The y-intercept of the model was 4.25, indicating the predicted interest rate when all other predictor variables are zero.
+
+# **Discussion**
+
+The results of this study indicate that credit score is the most important factor influencing interest rates for mortgage loans. Borrowers with higher credit scores are likely to receive lower interest rates, which can lead to significant savings over the life of a loan. The findings also suggest that loan term, loan amount, property value, and down payment are important factors to consider when applying for a mortgage.
+
+Limitations of the study include the use of a single dataset and the potential for multicollinearity among the independent variables. For future analyses, down payment would be a more informative predictor of interest rates if it were expressed as a percentage of the total loan amount, rather than as a simple dollar amount. This change would allow for more meaningful comparisons across loans with varying amounts and could improve the accuracy of interest rate predictions. Future research could explore additional factors that may influence interest rates, such as macroeconomic conditions and lender-specific factors.
+
+# **Conclusion:**
+
+This study highlights the importance of credit score, loan term, loan amount, property value, and down payment in determining interest rates for mortgage loans. These findings can inform borrowers' decisions when applying for a mortgage and can also help lenders make more informed decisions when setting interest rates.
+
+## **Some more of Machine Learning**
+  ### Creating a 3D-Scatter with the PCA data and the clusters
+
   ### Using PCA to reduce dimension to three principal components.
   
  ![image](https://user-images.githubusercontent.com/112348240/223311768-ec353c36-00c8-4d3d-9d80-0142fa42acc5.png)
@@ -72,6 +135,7 @@ The next step was to assemble the architecture of the deep learning model. In th
   
  ![image](https://user-images.githubusercontent.com/112348240/223312125-666ed200-f12f-4b0a-b7a7-9938fb66585d.png)
 
+
 ## **Results**
 - Our analysis found that the independent variables, taken together, were strong predictors of mortgage interest rates, as demonstrated by the significant F-statistic (F(11, 1000) = 110.5, p < 0.001). The model explained 79% of the variance in interest rates, with a good fit as indicated by the adjusted R-squared value of 0.78.
 
@@ -79,6 +143,15 @@ The next step was to assemble the architecture of the deep learning model. In th
 
 - The y-intercept of the model was 4.25, indicating the predicted interest rate when all other predictor variables are zero.
 The next step was to assemble the architecture of the deep learning model. In this project, we used Keras, a deep learning API from TensorFlow 2. Our input layer included the independent variables like loan amount and credit scores. We created two hidden layers with 495 and 297 nodes, respectively.  Finally, our out put layer consists of a single node; the output of this node is the predicted value of the dependent variable - in this case, interest rates
+
+## Results
+The next step was to assemble the architecture of the deep learning model. In this project, we used Keras, a deep learning API from TensorFlow 2. Our input layer included the independent variables like loan amount and credit scores. We created two hidden layers with 495 and 297 nodes, respectively.  Finally, our out put layer consists of a single node; the output of this node is the predicted value of the dependent variable - in this case, interest rate. 
+
+-**Model Selection**
+
+model run through 5 epochs
+![model evaluation]
+
 
 y-intercept: 0.011
 
@@ -113,7 +186,9 @@ Coefficients:
 - WhatsApp
 - Microsoft Teams Meeting
 
-## **Tables that were create using pgAdmin4 for SQL:**
+# **Appendix**
+
+## **Data summary tables created using pgAdmin4 for SQL**
 
 **Credit Scores criteria 600-699**
 ![CS1](https://user-images.githubusercontent.com/112505962/223245228-70c80f0a-66bf-4d36-afe6-ee27eca1664b.png)
@@ -148,8 +223,17 @@ Coefficients:
 
 ![image](https://user-images.githubusercontent.com/112505962/223301247-13e337eb-1a77-4081-b6cf-5b72a3988893.png)
 
+
+## Projectory
  
- ![image](https://user-images.githubusercontent.com/112348240/222617620-6986d9bc-d574-4d47-aefb-63b4b772277c.png)
+ This file should always reflect the current status of the project, any specific needs or challenges that exist, and the plans for future work. Make sure to inclue links to your data, your slide deck, and any other important references
+ 
+ 
+ 
+ ![mortgage_data](https://github.com/gasconma1960/Final-Project-Mortgage-Rate-Genie/blob/main/Pics/mortgage_interest_big.png)
+ 
+  
+ ![credit_score](https://github.com/gasconma1960/Final-Project-Mortgage-Rate-Genie/blob/main/Pics/credit_score.png)
  
  ## Visualization
  
@@ -159,6 +243,32 @@ Coefficients:
  
 
  ## **Final Project**
- 
- ## **UCF Bootcamp Data Analytics and Visualization**
 
+ ## Status of The Project
+   - ETL Complete
+   
+   - Machine Learning in Process
+   
+   - Develope the Web Page in Process
+   
+   - Final Presentation has began
+   
+ ## **Sources**
+ - Machine Learning 
+ 
+ - Database
+ 
+ - HTML
+ 
+ - CSS
+ 
+ - JS
+ 
+ # **Presentation**
+ 
+ Link to presentation 
+ https://onedrive.live.com/edit.aspx?resid=F551EBD77C412B7E!21811&ithint=file%2cpptx&authkey=!AF1wOl8ZtMhkqTg
+
+ ## **UCF Bootcamp Data Analytics and Visualization**
+ By: Christy, Marisol, Stephanie, Maria & Omie
+  ![image](https://user-images.githubusercontent.com/112348240/222617620-6986d9bc-d574-4d47-aefb-63b4b772277c.png)
