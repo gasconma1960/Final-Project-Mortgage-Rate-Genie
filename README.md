@@ -127,6 +127,9 @@ Coefficients
  
  [Gif image](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZWM5Y2VlOTkzZTU0NTZlN2VjNzRkNWM5NDYzNGM1ZWEyZTlmZjk2NyZjdD1n/1WSdNroJ9bS4YduyU1/giphy.gif)
  
+ Link to presentation 
+ https://onedrive.live.com/edit.aspx?resid=F551EBD77C412B7E!21811&ithint=file%2cpptx&authkey=!AF1wOl8ZtMhkqTg
+
  ## **Final Project**
  
  ## **UCF Bootcamp Data Analytics and Visualization**
