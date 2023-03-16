@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mortgage Rate Genie</title>
+    <link rel="stylesheet" href="style2.css" />
+</head>
+<body>
+    <div class="top">
+        <h2>Mortgage Rate Genie</h2>
+        <style>
+            body {
+                background-image: url(https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmExNmVkYzg3MDFhNzkxMGNmODM1ZGE1NDk1NTA4MTYyNWJmMDZhOCZjdD1n/QmNuYxDZgxXAEobjLZ/giphy.gif);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        </style>
+    <div class="Mortgage-Rate-Genie">
+            <div class="container">
+                <h1>Mortgage Rate Genie</h1>
+                <div class="input-row">
+                  <label for="creditScore">Credit Score:</label>
+                  <input type="number" id="creditScore" />
+                </div>
+                <div class="input-row">
+                  <label for="loanTerm">Loan Term (years):</label>
+                  <input type="number" id="loanTerm" />
+                </div>
+                <div class="input-row">
+                  <label for="downPayment">Down Payment:</label>
+                  <input type="number" id="downPayment" />
+                </div>
+                <div class="input-row">
+                  <label for="loanAmount">Loan Amount:</label>
+                  <input type="number" id="loanAmount" />
+                </div>
+                <div class="button-row">
+                  <button onclick="calculate()">Calculate</button>
+                  <button onclick="reset()">Reset</button>
+                </div>
+                <div class="result-row">
+                  <label for="result">Interest Rate:</label>
+                  <span id="result"></span>
+                </div>
+              </div>
+
+    <div class="Guage-Plot">
+        <div id="gauge"></div>
+    
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/toorshia/justgage@1.2.2/raphael-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/toorshia/justgage@1.2.2/justgage.min.js"></script> 
+    <script src="main2.js"></script>
+    
+</body>
+</html>
