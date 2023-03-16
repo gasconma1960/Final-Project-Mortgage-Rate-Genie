@@ -43,9 +43,9 @@ ChatGPT gave us code that would create a 1000-row dataframe with interest rates 
 ![image](https://user-images.githubusercontent.com/112348240/225435410-b382ee02-8cd3-4397-a1ea-833920507569.png)
 
 ## **Analysis using Different Machine Learning Models** 
- Multiple linear regression is a widely used statistical technique for modeling the relationship between a dependent variable (in this case, interest rates) and multiple independent variables (such as loan amount, credit score, property value, etc.). A multiple linear regression model provides interpretable coefficients taht indicate the direction and strength of the relationship between each feature and the target variable. 
+Multiple linear regression is a widely used statistical technique for modeling the relationship between a dependent variable (in this case, interest rates) and multiple independent variables (such as loan amount, credit score, property value, etc.). A multiple linear regression model provides interpretable coefficients taht indicate the direction and strength of the relationship between each feature and the target variable. 
 
- We began our analysis by taking a close look at the data. The code that created our dataset chose numbers randomly between a certain range of values. Looking at our continuous variables, we see that they are not normally distributed:
+We began our analysis by taking a close look at the data. The code that created our dataset chose numbers randomly between a certain range of values. Looking at our continuous variables, we see that they are not normally distributed:
 
 
 Loan Amount: the amount of money borrowed for a mortgage
@@ -100,34 +100,11 @@ The data was split into training and testing sets and then scaled using MinMaxSc
 
 - Our analysis found that the independent variables, taken together, were strong predictors of mortgage interest rates, as demonstrated by the significant F-statistic (F(11, 1000) = 110.5, p < 0.001). The model explained 79% of the variance in interest rates, with a good fit as indicated by the adjusted R-squared value of 0.78.
 
-- Several individual variables were found to be significant predictors of interest rates. The strongest predictor was credit score, with higher scores associated with lower interest rates (coefficient = -0.44, t(1000) = -11.4, p < 0.001). Loan term also had a significant effect, with longer terms associated with higher interest rates (coefficient = 0.26, t(1000) = 6.7, p < 0.001). Down payment was also a significant predictor, with a coefficient of -0.13 (t(1000) = -3.4, p = 0.001), indicating that higher down payments were associated with lower interest rates. Similarly, loan amount was a significant predictor, with a coefficient of 0.21 (t(1000) = 5.3, p < 0.001), indicating that higher loan amounts were associated with higher interest rates.
+- Several individual variables were found to be significant predictors of interest rates. The strongest predictor was credit score, with higher scores associated with lower interest rates (coefficient = -0.0.0058, t(1000) = -11.4, p < 0.001). Loan term also had a significant effect, with longer terms associated with higher interest rates (coefficient = 0.0.16, t(1000) = 6.7, p < 0.001). Down payment was also a significant predictor, with a coefficient of -0.000005 (t(1000) = -3.4, p = 0.001), indicating that higher down payments were associated with lower interest rates. Similarly, loan amount was a significant predictor, with a coefficient of 0.0000005 (t(1000) = 5.3, p < 0.001), indicating that higher loan amounts were associated with higher interest rates.
 
-- The y-intercept of the model was 4.25, indicating the predicted interest rate when all other predictor variables are zero.
+- The y-intercept of the model was 14.0, indicating the predicted interest rate when all other predictor variables are zero.
  
 - The next step was to assemble the architecture of the deep learning model. In this project, we used Keras, a deep learning API from TensorFlow 2. Our input layer included the independent variables like loan amount and credit scores. We created two hidden layers with 495 and 297 nodes, respectively.  Finally, our out put layer consists of a single node; the output of this node is the predicted value of the dependent variable - in this case, interest rates
-
--**Model Selection**
-
-model run through 5 epochs
-![model evaluation]
-
-
-y-intercept: 0.011
-
-Coefficients:
-
-*X1 (Loan Amount): -0.115
-
-*X2 (Credit Score): -0.079
-
-*X3 (Loan Term): -0.049
-
-*X4 (Down Payment): 0.064
-
-*X5 (Property Type_Condo): -0.003
-    (Property Type_Multi-Family): 0.099
-    (Property Type_Single-Family): -0.100
-    (Property Typer_Townhouse): 0.087
 
 ## **Discussion**
 - The results of this study indicate that credit score is the most important factor influencing interest rates for mortgage loans. Borrowers with higher credit scores are likely to receive lower interest rates, which can lead to significant savings over the life of a loan. The findings also suggest that loan term, loan amount, property value, and down payment are important factors to consider when applying for a mortgage.
