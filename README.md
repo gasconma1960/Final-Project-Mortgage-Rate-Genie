@@ -149,10 +149,10 @@ The data was split into training and testing sets and then scaled using MinMaxSc
 ![image](https://user-images.githubusercontent.com/112505962/223301247-13e337eb-1a77-4081-b6cf-5b72a3988893.png)
  
 
- ![mortgage_data](https://github.com/gasconma1960/Final-Project-Mortgage-Rate-Genie/blob/main/Pics/mortgage_interest_big.png)
+![mortgage_data](https://github.com/gasconma1960/Final-Project-Mortgage-Rate-Genie/blob/main/Pics/mortgage_interest_big.png)
  
   
- ![credit_score](https://github.com/gasconma1960/Final-Project-Mortgage-Rate-Genie/blob/main/Pics/credit_score.png)
+![credit_score](https://github.com/gasconma1960/Final-Project-Mortgage-Rate-Genie/blob/main/Pics/credit_score.png)
  
 ## **Conclusion:**
  This study highlights the importance of credit score, loan term, loan amount, property value, and down payment in determining interest rates for mortgage loans. These findings can inform borrowers' decisions when applying for a mortgage and can also help lenders make more informed decisions when setting interest rates.
@@ -169,7 +169,13 @@ The data was split into training and testing sets and then scaled using MinMaxSc
  
  [Gif image](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZWM5Y2VlOTkzZTU0NTZlN2VjNzRkNWM5NDYzNGM1ZWEyZTlmZjk2NyZjdD1n/1WSdNroJ9bS4YduyU1/giphy.gif)
  
+## **Project Status**
+- **Data Selection:** Complete
+- **ETL:** Complete
+- **Machine Learning:** Complete
+- **Html, css and JavaScript for the Interactive Webpage:** In Process
+- **Presentation on PowerPoint:** In Process
 
- ## **UCF Bootcamp Data Analytics and Visualization**
+## **UCF Bootcamp Data Analytics and Visualization**
  By: Christy, Marisol, Stephanie, Maria & Omie
   ![image](https://user-images.githubusercontent.com/112348240/222617620-6986d9bc-d574-4d47-aefb-63b4b772277c.png)
