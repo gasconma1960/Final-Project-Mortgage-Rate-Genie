@@ -148,11 +148,6 @@ The data was split into training and testing sets and then scaled using MinMaxSc
 
 ![image](https://user-images.githubusercontent.com/112505962/223301247-13e337eb-1a77-4081-b6cf-5b72a3988893.png)
  
-
-![mortgage_data](https://github.com/gasconma1960/Final-Project-Mortgage-Rate-Genie/blob/main/Pics/mortgage_interest_big.png)
- 
-  
-![credit_score](https://github.com/gasconma1960/Final-Project-Mortgage-Rate-Genie/blob/main/Pics/credit_score.png)
  
 ## **Conclusion:**
  This study highlights the importance of credit score, loan term, loan amount, property value, and down payment in determining interest rates for mortgage loans. These findings can inform borrowers' decisions when applying for a mortgage and can also help lenders make more informed decisions when setting interest rates.
