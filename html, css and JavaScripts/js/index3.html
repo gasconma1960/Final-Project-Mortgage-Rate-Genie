@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mortgage Rate Genie</title>
-    <link rel="stylesheet" href="css/style 3.css" />
+    <link rel="stylesheet" href="style 3.css" />
+
 </head>
 <body>
     <div class="Mortgage-Rate-Genie">
@@ -35,26 +36,23 @@
                       <div class="input-row">
                         <label for="loanAmount">Loan Amount:</label>
                         <input type="number" id="loanAmount" />
-                      </div>
                 </form>
-            </div>
-            <div class="button-row">
-                <button onclick="calculate()">Calculate</button>
-                <button onclick="reset()">Reset</button>
-            </div>
-            
-            <div class="result-row">
-            <label for="result">Interest Rate:</label>
-            <span id="result"></span>
-            <div class="Guage-Plot">
-                <div id="gauge"></div>      
-                 
-        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/gh/toorshia/justgage@1.2.2/raphael-2.1.4.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
-        <script src="https://cdn.jsdelivr.net/gh/toorshia/justgage@1.2.2/justgage.min.js"></script> 
-        <script src="main3.js"></script>
-            
+                      </div>
+                        <div class="button-row">
+                            <button onclick="calculate()">Calculate</button>
+                            <button onclick="reset()">Reset</button>
+                        </div>
+                        <div class="result-row">
+                        <label for="result">Interest Rate:</label>
+                        <span id="result"></span>
+                        </div>
+                        <div class="Guage-Plot">
+                            <div id="gauge"></div>
+                                            
+                <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+                <script src="https://cdn.jsdelivr.net/gh/toorshia/justgage@1.2.2/raphael-2.1.4.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+                <script src="https://cdn.jsdelivr.net/gh/toorshia/justgage@1.2.2/justgage.min.js"></script> 
+                <script src="main3.js"></script>                        
 </body>
-</html>     
-        
+</html>
