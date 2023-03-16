@@ -43,23 +43,23 @@ ChatGPT gave us code that would create a 1000-row dataframe with interest rates 
 ![image](https://user-images.githubusercontent.com/112348240/225435410-b382ee02-8cd3-4397-a1ea-833920507569.png)
 
 ## **Analysis using Different Machine Learning Models** 
-Multiple linear regression is a widely used statistical technique for modeling the relationship between a dependent variable (in this case, interest rates) and multiple independent variables (such as loan amount, credit score, property value, etc.). A multiple linear regression model provides interpretable coefficients taht indicate the direction and strength of the relationship between each feature and the target variable. 
+ **Multiple linear regression** is a widely used statistical technique for modeling the relationship between a dependent variable (in this case, interest rates) and multiple independent variables (such as loan amount, credit score, property value, etc.). A multiple linear regression model provides interpretable coefficients taht indicate the direction and strength of the relationship between each feature and the target variable. 
 
 We began our analysis by taking a close look at the data. The code that created our dataset chose numbers randomly between a certain range of values. Looking at our continuous variables, we see that they are not normally distributed:
 
 
-Loan Amount: the amount of money borrowed for a mortgage
-Credit Score: a numerical representation of a borrower's creditworthiness, based on their credit history
-Property Value: The appraised value of the property being mortgaged.
-Loan-to-value Ratio: The ratio of the loan amount to the property value
-Loan Term: The length of time (in years) over which the mortgage is repaid
-Employment Length: The length of time the borrower has been employed
-Loan Type: The type of property being mortgaged (single-family, multi-family, townhouse)
-State: The state in which the property is located
-Debt-to-Income-Ratio: The ration of the borrower's monthly debt payments to their monthly income
-Down Payment: The amount of money the borrower puts down on the property
-Income: The borrower's income
-Occupancy Type: Whether the property will be owner-occupied or used as a rental property
+**Loan Amount:** the amount of money borrowed for a mortgage
+**Credit Score:** a numerical representation of a borrower's creditworthiness, based on their credit history
+**Property Value:** The appraised value of the property being mortgaged.
+**Loan-to-value Ratio:** The ratio of the loan amount to the property value
+**Loan Term:** The length of time (in years) over which the mortgage is repaid
+**Employment Length:** The length of time the borrower has been employed
+**Loan Type:** The type of property being mortgaged (single-family, multi-family, townhouse)
+**State:** The state in which the property is located
+**Debt-to-Income-Ratio:** The ration of the borrower's monthly debt payments to their monthly income
+**Down Payment:** The amount of money the borrower puts down on the property
+**Income:** The borrower's income
+**Occupancy Type:** Whether the property will be owner-occupied or used as a rental property
 
 
 **One-hot encoding** identifies all unique column values and splits the single categorical column into a series of columns, each containing information about a single unique categorical value.
