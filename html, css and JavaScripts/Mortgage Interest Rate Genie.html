@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Mortgage Rate Genie</title>
-    <link rel="stylesheet" href="style 3.css" />
+    <link rel="stylesheet" href="css/style 2.css" />
 </head>
 <body>
     <div class="Mortgage-Rate-Genie">
@@ -13,7 +14,7 @@
             <h2>Mortgage Rate Genie</h2>
             <style>
                 body {
-                    background-image: url(https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmExNmVkYzg3MDFhNzkxMGNmODM1ZGE1NDk1NTA4MTYyNWJmMDZhOCZjdD1n/QmNuYxDZgxXAEobjLZ/giphy.gif);
+                    background-image: url(https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNTJjYzA4YTVjYjIzZjViZDk5ZmJkMzU5MTc3NmMxZTZmMzFkOTk2MSZjdD1n/Oz6HCmGdpvO0HPY4lz/giphy.gif);
                     background-repeat: no-repeat;
                     background-size: cover;
                 }
@@ -39,21 +40,33 @@
                       </div>
                 </form>
             </div>
-        <div class="button-row">
-             <button onclick="calculate()">Calculate</button>
-             <button onclick="reset()">Reset</button>
-        </div>
-            <div class="Guage-Plot">
-                <div id="gauge"></div>
+            <div class="button-row">
+                <button onclick="calculate()">Calculate</button>
+                <button onclick="reset()">Reset</button>
+            
             <div class="result-row">
-            <label for="result">Interest Rate:</label>
-            <span id="result"></span>
-                    
+                <label for="result">Interest Rate:</label>
+                <span id="result"></span>
+            </div>
+            <div style="float:left; justify-content: space-between; align-items: center;">
+                <div style="float: left;">
+                  <img src="1f9de-2640.png" alt="Image of a person" style="width: 60%;">
+                </div>
+            </div>  
+                               
+                <div class="Gauge-Plot" style="float:right;">
+                  <div id="gauge"></div>
+                </div>
+            </div>
+            <div class="bottom">
+                <h3>Meet the Team: Maria Salinas, Cristy Soldo, Omayra Roosevelt,<br>Stephanie Ramkissoon and Marisol Gascon Linarez</h3>
+            </div>
+               
         <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
         <script src="https://cdn.jsdelivr.net/gh/toorshia/justgage@1.2.2/raphael-2.1.4.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
         <script src="https://cdn.jsdelivr.net/gh/toorshia/justgage@1.2.2/justgage.min.js"></script> 
-        <script src="main3.js"></script>
+        <script src="js/main3.js"></script>
             
 </body>
 </html>
