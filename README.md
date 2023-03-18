@@ -47,18 +47,28 @@ ChatGPT gave us code that would create a 1000-row dataframe with interest rates 
 
 We began our analysis by taking a close look at the data. The code that created our dataset chose numbers randomly between a certain range of values. Looking at our continuous variables, we see that they are not normally distributed:
 
-
 **Loan Amount:** the amount of money borrowed for a mortgage
+
 **Credit Score:** a numerical representation of a borrower's creditworthiness, based on their credit history
+
 **Property Value:** The appraised value of the property being mortgaged.
+
 **Loan-to-value Ratio:** The ratio of the loan amount to the property value
+
 **Loan Term:** The length of time (in years) over which the mortgage is repaid
+
 **Employment Length:** The length of time the borrower has been employed
+
 **Loan Type:** The type of property being mortgaged (single-family, multi-family, townhouse)
+
 **State:** The state in which the property is located
+
 **Debt-to-Income-Ratio:** The ration of the borrower's monthly debt payments to their monthly income
+
 **Down Payment:** The amount of money the borrower puts down on the property
+
 **Income:** The borrower's income
+
 **Occupancy Type:** Whether the property will be owner-occupied or used as a rental property
 
 
@@ -148,7 +158,9 @@ The data was split into training and testing sets and then scaled using MinMaxSc
 
 ![image](https://user-images.githubusercontent.com/112505962/223301247-13e337eb-1a77-4081-b6cf-5b72a3988893.png)
  
- 
+[![Alt text](https://img.youtube.com/vi/F-WlS0Z8Nto/0.jpg)](https://www.youtube.com/watch?v=F-WlS0Z8Nto)
+
+
 ## **Conclusion:**
  This study highlights the importance of credit score, loan term, loan amount, property value, and down payment in determining interest rates for mortgage loans. These findings can inform borrowers' decisions when applying for a mortgage and can also help lenders make more informed decisions when setting interest rates.
 
