@@ -1,45 +1,29 @@
 # **UCF Bootcamp Final Project - Mortgage Rate Genie**
-'''html
-<!-- <!DOCTYPE html>
-<html>
-  <head>
-    <style>
-      /* Style for the header */
-      header {
-        background-color: #4CAF50; /* Add your preferred color here */
-        color: white;
-        padding: 20px;
-        text-align: center;
-        font-size: 30px;
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      UCF Bootcamp Final Project - Mortgage Rate Genie
-    </header>
-    <!-- Rest of your code goes here -->
-  </body>
+
 [![Alt text](https://img.youtube.com/vi/F-WlS0Z8Nto/0.jpg)](https://www.youtube.com/watch?v=F-WlS0Z8Nto)
 
 # **Overview**
+______
 Our team has created a multiple linear regression model that can predict mortgage interest rates based on a range of features. To make our model user-friendly, we've built an app, the Mortgage Rate Genie, that lets users input their own data and receive a personalized prediction for their mortgage interest rate. By leveraging the power of data analytics, our model takes into account a variety of factors that lenders consider when setting interest rates, such as loan amount, credit score, property value, loan term, employment length, and more. With this information, our app can provide users with a reliable estimate of what they can expect to pay in interest over the life of their mortgage.
 
 ## Project Summary
+____
 For more information about our project, please view the following presentation slides:
 
-Link to presentation 
- https://onedrive.live.com/edit.aspx?resid=F551EBD77C412B7E!21811&ithint=file%2cpptx&authkey=!AF1wOl8ZtMhkqTg
+Link to presentation
+ <https://onedrive.live.com/edit.aspx?resid=F551EBD77C412B7E>!21811&ithint=file%2cpptx&authkey=!AF1wOl8ZtMhkqTg
 
 ## Resources
+____
 * Data:"mortgage_interest_rates_gpt.csv"
 * ModelCode:"Mortgage_MLR"
 * Jupyter Notebook, SQL, Python 3.7
-* Machine Learning 
+* Machine Learning
 * Packages: statsmodels, sklearn, pandas
 * HTML, CSS and JavaScript
 
 ## **Data Collection**
+___
 The first component of our project was to find a dataset that included mortgage interest rates and multiple factors that influence interest rates. We decided to use ChatGPT to help design the appropriate dataset. The following was the prompt that was entered into ChatGPT:
 
 >"I need a data set for mortgage interest rates. I need a variety of factors that would determine interest rates of a mortgage, preferebly 10 or more. Can you create a data set for me that is at least 1000 rows"
@@ -48,7 +32,7 @@ ChatGPT gave us code that would create a 1000-row dataframe with interest rates 
 
 * Loan Amount: the amount of money borrowed for a mortgage
 * Credit Score: a numerical representation of a borrower's creditworthiness, based on their credit history
-* Property Value: The appraised value of the property being mortgaged. 
+* Property Value: The appraised value of the property being mortgaged.
 * Loan-to-value Ratio: The ratio of the loan amount to the property value
 * Loan Term: The length of time (in years) over which the mortgage is repaid
 * Employment Length: The length of time the borrower has been employed
@@ -57,14 +41,15 @@ ChatGPT gave us code that would create a 1000-row dataframe with interest rates 
 * Debt-to-Income-Ratio: The ration of the borrower's monthly debt payments to their monthly income
 * Down Payment: The amount of money the borrower puts down on the property
 * Income: The borrower's income
-* Occupancy Type: Whether the property will be owner-occupied or used as a rental property 
+* Occupancy Type: Whether the property will be owner-occupied or used as a rental property
 
 ## **ETL Process**
-
+___
 ![image](https://user-images.githubusercontent.com/112348240/225435410-b382ee02-8cd3-4397-a1ea-833920507569.png)
 
-## **Analysis using Different Machine Learning Models** 
- **Multiple linear regression** is a widely used statistical technique for modeling the relationship between a dependent variable (in this case, interest rates) and multiple independent variables (such as loan amount, credit score, property value, etc.). A multiple linear regression model provides interpretable coefficients taht indicate the direction and strength of the relationship between each feature and the target variable. 
+## **Analysis using Different Machine Learning Models**
+____
+ **Multiple linear regression** is a widely used statistical technique for modeling the relationship between a dependent variable (in this case, interest rates) and multiple independent variables (such as loan amount, credit score, property value, etc.). A multiple linear regression model provides interpretable coefficients taht indicate the direction and strength of the relationship between each feature and the target variable.
 
 We began our analysis by taking a close look at the data. The code that created our dataset chose numbers randomly between a certain range of values. Looking at our continuous variables, we see that they are not normally distributed:
 
@@ -92,14 +77,11 @@ We began our analysis by taking a close look at the data. The code that created 
 
 **Occupancy Type:** Whether the property will be owner-occupied or used as a rental property
 
-
 **One-hot encoding** identifies all unique column values and splits the single categorical column into a series of columns, each containing information about a single unique categorical value.
 
 ![Data Histogram](https://github.com/gasconma1960/Final-Project-Mortgage-Rate-Genie/blob/Christy/data_histogram.png)
 
-
 Then, we plotted our data to look for outliers that may be influencing the distribution.
-
 
 **ReLu function** is good for looking at positive, nonlinear regression or classification data
 
@@ -128,24 +110,25 @@ The data was split into training and testing sets and then scaled using MinMaxSc
  ![image](https://user-images.githubusercontent.com/112348240/223312125-666ed200-f12f-4b0a-b7a7-9938fb66585d.png)
 
 ## **Results**
+___
+* Our analysis found that the independent variables, taken together, were strong predictors of mortgage interest rates, as demonstrated by the significant F-statistic (F(11, 1000) = 110.5, p < 0.001). The model explained 79% of the variance in interest rates, with a good fit as indicated by the adjusted R-squared value of 0.78.
 
-- Our analysis found that the independent variables, taken together, were strong predictors of mortgage interest rates, as demonstrated by the significant F-statistic (F(11, 1000) = 110.5, p < 0.001). The model explained 79% of the variance in interest rates, with a good fit as indicated by the adjusted R-squared value of 0.78.
+* Several individual variables were found to be significant predictors of interest rates. The strongest predictor was credit score, with higher scores associated with lower interest rates (coefficient = -0.0.0058, t(1000) = -11.4, p < 0.001). Loan term also had a significant effect, with longer terms associated with higher interest rates (coefficient = 0.0.16, t(1000) = 6.7, p < 0.001). Down payment was also a significant predictor, with a coefficient of -0.000005 (t(1000) = -3.4, p = 0.001), indicating that higher down payments were associated with lower interest rates. Similarly, loan amount was a significant predictor, with a coefficient of 0.0000005 (t(1000) = 5.3, p < 0.001), indicating that higher loan amounts were associated with higher interest rates.
 
-- Several individual variables were found to be significant predictors of interest rates. The strongest predictor was credit score, with higher scores associated with lower interest rates (coefficient = -0.0.0058, t(1000) = -11.4, p < 0.001). Loan term also had a significant effect, with longer terms associated with higher interest rates (coefficient = 0.0.16, t(1000) = 6.7, p < 0.001). Down payment was also a significant predictor, with a coefficient of -0.000005 (t(1000) = -3.4, p = 0.001), indicating that higher down payments were associated with lower interest rates. Similarly, loan amount was a significant predictor, with a coefficient of 0.0000005 (t(1000) = 5.3, p < 0.001), indicating that higher loan amounts were associated with higher interest rates.
+* The y-intercept of the model was 14.0, indicating the predicted interest rate when all other predictor variables are zero.
 
-- The y-intercept of the model was 14.0, indicating the predicted interest rate when all other predictor variables are zero.
- 
-- The next step was to assemble the architecture of the deep learning model. In this project, we used Keras, a deep learning API from TensorFlow 2. Our input layer included the independent variables like loan amount and credit scores. We created two hidden layers with 495 and 297 nodes, respectively.  Finally, our out put layer consists of a single node; the output of this node is the predicted value of the dependent variable - in this case, interest rates
+* The next step was to assemble the architecture of the deep learning model. In this project, we used Keras, a deep learning API from TensorFlow 2. Our input layer included the independent variables like loan amount and credit scores. We created two hidden layers with 495 and 297 nodes, respectively.  Finally, our out put layer consists of a single node; the output of this node is the predicted value of the dependent variable - in this case, interest rates
 
 ## **Discussion**
-- The results of this study indicate that credit score is the most important factor influencing interest rates for mortgage loans. Borrowers with higher credit scores are likely to receive lower interest rates, which can lead to significant savings over the life of a loan. The findings also suggest that loan term, loan amount, property value, and down payment are important factors to consider when applying for a mortgage.
+___
+* The results of this study indicate that credit score is the most important factor influencing interest rates for mortgage loans. Borrowers with higher credit scores are likely to receive lower interest rates, which can lead to significant savings over the life of a loan. The findings also suggest that loan term, loan amount, property value, and down payment are important factors to consider when applying for a mortgage.
 
-- Limitations of the study include the use of a single dataset and the potential for multicollinearity among the independent variables. For future analyses, down payment would be a more informative predictor of interest rates if it were expressed as a percentage of the total loan amount, rather than as a simple dollar amount. This change would allow for more meaningful comparisons across loans with varying amounts and could improve the accuracy of interest rate predictions. Future research could explore additional factors that may influence interest rates, such as macroeconomic conditions and lender-specific factors.
- 
-- Using Machine Learning and apply to develop to the website wasn't the best approach so we decide to go an Create a Webpage using html, css and JavaScript for
+* Limitations of the study include the use of a single dataset and the potential for multicollinearity among the independent variables. For future analyses, down payment would be a more informative predictor of interest rates if it were expressed as a percentage of the total loan amount, rather than as a simple dollar amount. This change would allow for more meaningful comparisons across loans with varying amounts and could improve the accuracy of interest rate predictions. Future research could explore additional factors that may influence interest rates, such as macroeconomic conditions and lender-specific factors.
+
+* Using Machine Learning and apply to develop to the website wasn't the best approach so we decide to go an Create a Webpage using html, css and JavaScript for
 
 ## **SQL PgAdmin use to Create our Tables**
-
+___
 ![image](https://user-images.githubusercontent.com/112505962/223301247-13e337eb-1a77-4081-b6cf-5b72a3988893.png)
 
 **Credit Scores criteria 600-699**
@@ -157,29 +140,22 @@ The data was split into training and testing sets and then scaled using MinMaxSc
 **Credit Scores Criteria 800-850**
 ![CS3](https://user-images.githubusercontent.com/112505962/223245489-7e34ba75-4764-4c77-85e4-a6d33a2fe3b5.png)
 
-
 ![income summary](https://user-images.githubusercontent.com/112505962/223245874-ac3c3e05-032b-4740-8602-29108c9c9013.png)
-
 
 ![interest rate summary](https://user-images.githubusercontent.com/112505962/223245958-9699877a-a6ec-488e-8085-c560f4bb4947.png)
 
-
 ![loan terms summary](https://user-images.githubusercontent.com/112505962/223246067-ab3870a2-d0d8-4f53-a722-b2842a905d88.png)
-
 
 ![loan to value summary](https://user-images.githubusercontent.com/112505962/223246206-ec4b99af-6ee9-4641-8f5e-fa0187a81fca.png)
 
-
 ![credit score summary](https://user-images.githubusercontent.com/112505962/223246271-a6e0be32-36b5-4289-b934-e8b8384575bd.png)
 
-
 ![debt to income summary](https://user-images.githubusercontent.com/112505962/223246392-474e6d73-520c-4a6e-a7e0-6ddb81087c06.png)
-
 
 ![down payment summary](https://user-images.githubusercontent.com/112505962/223246491-9395ea03-1d37-4281-8218-ef9cbb23be6e.png)
 
 ## **Interactive WebPage using HTML, CSS and JS:**
-
+___
 **JS Screenshot**
 
 ![image](https://user-images.githubusercontent.com/112348240/226147305-a3b88628-0b06-4d5b-860a-92d7a22fdf6c.png)
@@ -189,28 +165,31 @@ The data was split into training and testing sets and then scaled using MinMaxSc
 ![image](https://user-images.githubusercontent.com/112348240/226147314-6db8be79-6929-43f8-80c5-ac00a5864a67.png)
 
 ## **Conclusion:**
+___
  This study highlights the importance of credit score, loan term, loan amount, property value, and down payment in determining interest rates for mortgage loans. These findings can inform borrowers' decisions when applying for a mortgage and can also help lenders make more informed decisions when setting interest rates.
 
 ## **Communication Channels use for The Project**
+___
 - Slack
-- Zoom Meeting
-- WhatsApp
-- Microsoft Teams Meeting
+* Zoom Meeting
+* WhatsApp
+* Microsoft Teams Meeting
 
- ## Visualization
- 
+## Visualization
+___
  [Gif image](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmExNmVkYzg3MDFhNzkxMGNmODM1ZGE1NDk1NTA4MTYyNWJmMDZhOCZjdD1n/QmNuYxDZgxXAEobjLZ/giphy.gif)
- 
+
  [Gif image](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZWM5Y2VlOTkzZTU0NTZlN2VjNzRkNWM5NDYzNGM1ZWEyZTlmZjk2NyZjdD1n/1WSdNroJ9bS4YduyU1/giphy.gif)
- 
+
 ## **Project Status**
+___
 - **Data Selection:** Complete
-- **ETL:** Complete
-- **Machine Learning:** Complete
-- **Html, css and JavaScript for the Interactive Webpage:** Complete
-- **Presentation on PowerPoint:** In Process
+* **ETL:** Complete
+* **Machine Learning:** Complete
+* **Html, css and JavaScript for the Interactive Webpage:** Complete
+* **Presentation on PowerPoint:** In Process
 
 ## **UCF Bootcamp Data Analytics and Visualization**
-
+___
 ![image](https://user-images.githubusercontent.com/112348240/226147265-e895d034-d025-4bab-a262-ca4c5e0c2301.png)
 </html>
