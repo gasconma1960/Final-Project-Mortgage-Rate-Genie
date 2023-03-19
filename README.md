@@ -1,22 +1,22 @@
 
-## $${\color{green}UCF\space Bootcamp\space Final\space Project - Mortgage\space Rate\space Genie}$$
+# <span style="color:green">UCF Bootcamp Final Project - Mortgage Rate Genie</span>
 
 ______
 [![Alt text](https://img.youtube.com/vi/F-WlS0Z8Nto/0.jpg)](https://www.youtube.com/watch?v=F-WlS0Z8Nto)
 
-# $${\color{green}Overview}$$
+# <span style="color:green">Overview</span>
 
 _____
 Our team has created a multiple linear regression model that can predict mortgage interest rates based on a range of features. To make our model user-friendly, we've built an app, the Mortgage Rate Genie, that lets users input their own data and receive a personalized prediction for their mortgage interest rate. By leveraging the power of data analytics, our model takes into account a variety of factors that lenders consider when setting interest rates, such as loan amount, credit score, property value, loan term, employment length, and more. With this information, our app can provide users with a reliable estimate of what they can expect to pay in interest over the life of their mortgage.
 
-# $${\color{green}Project \ Summary}$$
+# <span style="color:green">Project Summary</span>
 ______
 For more information about our project, please view the following presentation slides:
 
 Link to presentation
  <https://onedrive.live.com/edit.aspx?resid=F551EBD77C412B7E>!21811&ithint=file%2cpptx&authkey=!AF1wOl8ZtMhkqTg
 
-## $${\color{green}Resources}$$
+## <span style="color:green">Resources</span>
 ______
 * Data:"mortgage_interest_rates_gpt.csv"
 * ModelCode:"Mortgage_MLR"
@@ -25,7 +25,7 @@ ______
 * Packages: statsmodels, sklearn, pandas
 * HTML, CSS and JavaScript
 
-## $${\color{green}Data \ Collection}$$
+## <span style="color:green">Data Collection</span>
 ______
 The first component of our project was to find a dataset that included mortgage interest rates and multiple factors that influence interest rates. We decided to use ChatGPT to help design the appropriate dataset. The following was the prompt that was entered into ChatGPT:
 
@@ -46,11 +46,11 @@ ChatGPT gave us code that would create a 1000-row dataframe with interest rates 
 * Income: The borrower's income
 * Occupancy Type: Whether the property will be owner-occupied or used as a rental property
 
-## $${\color{green}ETL \ Process}$$
+## <span style="color:green">ETL Process</span>
 ______
 ![image](https://user-images.githubusercontent.com/112348240/225435410-b382ee02-8cd3-4397-a1ea-833920507569.png)
 
-## $${\color{green}Analysis \ using \ Different \ Machine \ Learning \ Models}$$
+## <span style="color:green">Analysis using Different Machine Learning Models</span>
 ______
  **Multiple linear regression** is a widely used statistical technique for modeling the relationship between a dependent variable (in this case, interest rates) and multiple independent variables (such as loan amount, credit score, property value, etc.). A multiple linear regression model provides interpretable coefficients taht indicate the direction and strength of the relationship between each feature and the target variable.
 
@@ -112,7 +112,7 @@ The data was split into training and testing sets and then scaled using MinMaxSc
   
  ![image](https://user-images.githubusercontent.com/112348240/223312125-666ed200-f12f-4b0a-b7a7-9938fb66585d.png)
 
-## $${\color{green}Results}$$
+## <span style="color:green">Results</span>
 ______
 * Our analysis found that the independent variables, taken together, were strong predictors of mortgage interest rates, as demonstrated by the significant F-statistic (F(11, 1000) = 110.5, p < 0.001). The model explained 79% of the variance in interest rates, with a good fit as indicated by the adjusted R-squared value of 0.78.
 
@@ -122,7 +122,7 @@ ______
 
 * The next step was to assemble the architecture of the deep learning model. In this project, we used Keras, a deep learning API from TensorFlow 2. Our input layer included the independent variables like loan amount and credit scores. We created two hidden layers with 495 and 297 nodes, respectively.  Finally, our out put layer consists of a single node; the output of this node is the predicted value of the dependent variable - in this case, interest rates
 
-## $${\color{green}Discussion}$$
+## <span style="color:green">Discussion</span>
 ______
 * The results of this study indicate that credit score is the most important factor influencing interest rates for mortgage loans. Borrowers with higher credit scores are likely to receive lower interest rates, which can lead to significant savings over the life of a loan. The findings also suggest that loan term, loan amount, property value, and down payment are important factors to consider when applying for a mortgage.
 
@@ -130,7 +130,7 @@ ______
 
 * Using Machine Learning and apply to develop to the website wasn't the best approach so we decide to go an Create a Webpage using html, css and JavaScript for
 
-## $${\color{green}SQL \ PgAdmin \ use \ to \ Create \ our \ Tables}$$
+## <span style="color:green">SQL PgAdmin use to Create our Tables</span>
 ______
 ![image](https://user-images.githubusercontent.com/112505962/223301247-13e337eb-1a77-4081-b6cf-5b72a3988893.png)
 
@@ -157,7 +157,7 @@ ______
 
 ![down payment summary](https://user-images.githubusercontent.com/112505962/223246491-9395ea03-1d37-4281-8218-ef9cbb23be6e.png)
 
-## $${\color{green}Interactive \ WebPage \ using  \ HTML, \ CSS \ and \ JS \:}$$
+## <span style="color:green">Interactive WebPage using  HTML, CSS and JS:</span>
 ______
 **HTML Code Portion**
 ```html
@@ -299,24 +299,24 @@ img {
   ```
 
 
-## $${\color{green}Conclusion:}$$
+## <span style="color:green">Conclusion:</span>
 ___
  This study highlights the importance of credit score, loan term, loan amount, property value, and down payment in determining interest rates for mortgage loans. These findings can inform borrowers' decisions when applying for a mortgage and can also help lenders make more informed decisions when setting interest rates.
 
-## $${\color{green}Communication \ Channels \ use \ for \ The \ Project}$$
+## <span style="color:green">Communication Channels use for The Project</span>
 ______
 * Slack
 * Zoom Meeting
 * WhatsApp
 * Microsoft Teams Meeting
 
-## $${\color{green}Visualization}$$
+## <span style="color:green">Visualization</span>
 ______
  [Gif image](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmExNmVkYzg3MDFhNzkxMGNmODM1ZGE1NDk1NTA4MTYyNWJmMDZhOCZjdD1n/QmNuYxDZgxXAEobjLZ/giphy.gif)
 
  [Gif image](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZWM5Y2VlOTkzZTU0NTZlN2VjNzRkNWM5NDYzNGM1ZWEyZTlmZjk2NyZjdD1n/1WSdNroJ9bS4YduyU1/giphy.gif)
 
-## $${\color{green}Project \ Status}$$
+## <span style="color:green">Project Status</span>
 ______
 - **Data Selection:** Complete
 * **ETL:** Complete
@@ -324,7 +324,7 @@ ______
 * **Html, css and JavaScript for the Interactive Webpage:** Complete
 * **Presentation on PowerPoint:** In Process
 
-## $${\color{red}UCF \ Bootcamp \  Data \ Analytics \ and \ Visualization}$$
+## <span style="color:red">UCF Bootcamp Data Analytics and Visualization</span>
 ______
 ![image](https://user-images.githubusercontent.com/112348240/226147265-e895d034-d025-4bab-a262-ca4c5e0c2301.png)
 </html>
