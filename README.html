@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>README.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="ucf-bootcamp-final-project---mortgage-rate-genie"><strong>UCF Bootcamp Final Project - Mortgage Rate Genie</strong></h1>
+<hr>
+<p><a href="https://www.youtube.com/watch?v=F-WlS0Z8Nto"><img src="https://img.youtube.com/vi/F-WlS0Z8Nto/0.jpg" alt="Alt text"></a></p>
+<h1 id="overview"><strong>Overview</strong></h1>
+<hr>
+<p>Our team has created a multiple linear regression model that can predict mortgage interest rates based on a range of features. To make our model user-friendly, we've built an app, the Mortgage Rate Genie, that lets users input their own data and receive a personalized prediction for their mortgage interest rate. By leveraging the power of data analytics, our model takes into account a variety of factors that lenders consider when setting interest rates, such as loan amount, credit score, property value, loan term, employment length, and more. With this information, our app can provide users with a reliable estimate of what they can expect to pay in interest over the life of their mortgage.</p>
+<h2 id="project-summary">Project Summary</h2>
+<hr>
+<p>For more information about our project, please view the following presentation slides:</p>
+<p>Link to presentation
+<a href="https://onedrive.live.com/edit.aspx?resid=F551EBD77C412B7E">https://onedrive.live.com/edit.aspx?resid=F551EBD77C412B7E</a>!21811&amp;ithint=file%2cpptx&amp;authkey=!AF1wOl8ZtMhkqTg</p>
+<h2 id="resources">Resources</h2>
+<hr>
+<ul>
+<li>Data:&quot;mortgage_interest_rates_gpt.csv&quot;</li>
+<li>ModelCode:&quot;Mortgage_MLR&quot;</li>
+<li>Jupyter Notebook, SQL, Python 3.7</li>
+<li>Machine Learning</li>
+<li>Packages: statsmodels, sklearn, pandas</li>
+<li>HTML, CSS and JavaScript</li>
+</ul>
+<h2 id="data-collection"><strong>Data Collection</strong></h2>
+<hr>
+<p>The first component of our project was to find a dataset that included mortgage interest rates and multiple factors that influence interest rates. We decided to use ChatGPT to help design the appropriate dataset. The following was the prompt that was entered into ChatGPT:</p>
+<blockquote>
+<p>&quot;I need a data set for mortgage interest rates. I need a variety of factors that would determine interest rates of a mortgage, preferebly 10 or more. Can you create a data set for me that is at least 1000 rows&quot;</p>
+</blockquote>
+<p>ChatGPT gave us code that would create a 1000-row dataframe with interest rates and multiple 12 features that can potentially influence interest rates. The features included in our dataset are as follows:</p>
+<ul>
+<li>Loan Amount: the amount of money borrowed for a mortgage</li>
+<li>Credit Score: a numerical representation of a borrower's creditworthiness, based on their credit history</li>
+<li>Property Value: The appraised value of the property being mortgaged.</li>
+<li>Loan-to-value Ratio: The ratio of the loan amount to the property value</li>
+<li>Loan Term: The length of time (in years) over which the mortgage is repaid</li>
+<li>Employment Length: The length of time the borrower has been employed</li>
+<li>Loan Type: The type of property being mortgaged (single-family, multi-family, townhouse)</li>
+<li>State: The state in which the property is located</li>
+<li>Debt-to-Income-Ratio: The ration of the borrower's monthly debt payments to their monthly income</li>
+<li>Down Payment: The amount of money the borrower puts down on the property</li>
+<li>Income: The borrower's income</li>
+<li>Occupancy Type: Whether the property will be owner-occupied or used as a rental property</li>
+</ul>
+<h2 id="etl-process"><strong>ETL Process</strong></h2>
+<hr>
+<p><img src="https://user-images.githubusercontent.com/112348240/225435410-b382ee02-8cd3-4397-a1ea-833920507569.png" alt="image"></p>
+<h2 id="analysis-using-different-machine-learning-models"><strong>Analysis using Different Machine Learning Models</strong></h2>
+<hr>
+<p><strong>Multiple linear regression</strong> is a widely used statistical technique for modeling the relationship between a dependent variable (in this case, interest rates) and multiple independent variables (such as loan amount, credit score, property value, etc.). A multiple linear regression model provides interpretable coefficients taht indicate the direction and strength of the relationship between each feature and the target variable.</p>
+<p>We began our analysis by taking a close look at the data. The code that created our dataset chose numbers randomly between a certain range of values. Looking at our continuous variables, we see that they are not normally distributed:</p>
+<p><strong>Loan Amount:</strong> the amount of money borrowed for a mortgage</p>
+<p><strong>Credit Score:</strong> a numerical representation of a borrower's creditworthiness, based on their credit history</p>
+<p><strong>Property Value:</strong> The appraised value of the property being mortgaged.</p>
+<p><strong>Loan-to-value Ratio:</strong> The ratio of the loan amount to the property value</p>
+<p><strong>Loan Term:</strong> The length of time (in years) over which the mortgage is repaid</p>
+<p><strong>Employment Length:</strong> The length of time the borrower has been employed</p>
+<p><strong>Loan Type:</strong> The type of property being mortgaged (single-family, multi-family, townhouse)</p>
+<p><strong>State:</strong> The state in which the property is located</p>
+<p><strong>Debt-to-Income-Ratio:</strong> The ration of the borrower's monthly debt payments to their monthly income</p>
+<p><strong>Down Payment:</strong> The amount of money the borrower puts down on the property</p>
+<p><strong>Income:</strong> The borrower's income</p>
+<p><strong>Occupancy Type:</strong> Whether the property will be owner-occupied or used as a rental property</p>
+<p><strong>One-hot encoding</strong> identifies all unique column values and splits the single categorical column into a series of columns, each containing information about a single unique categorical value.</p>
+<p><img src="https://github.com/gasconma1960/Final-Project-Mortgage-Rate-Genie/blob/Christy/data_histogram.png" alt="Data Histogram"></p>
+<p>Then, we plotted our data to look for outliers that may be influencing the distribution.</p>
+<p><strong>ReLu function</strong> is good for looking at positive, nonlinear regression or classification data</p>
+<p><strong>Train the model:</strong>
+Split the dataset into training and validation sets and train the model on the training set using stochastic gradient descent or another optimization algorithm. Use the validation set to monitor the performance of the model and adjust its parameters as necessary.</p>
+<p><strong>Evaluate the model:</strong>
+Once the model is trained, evaluate its performance on a test set of data that was not used during training. Calculate metrics such as mean squared error, R-squared, and correlation coefficients to measure the accuracy of the model's predictions.</p>
+<p><strong>Data Boxplot</strong>
+<img src="https://github.com/gasconma1960/Final-Project-Mortgage-Rate-Genie/blob/Christy/data_boxplots.png" alt="Data Boxplot"></p>
+<p>Another assumption of linear regression is that there is no multicollinearity. In other words, independent variables are not highly correlated with each other. A heat map of our continous variables shows that the independent variables are not highly correlated with each other.</p>
+<p><strong>Data Heatmap</strong>
+<img src="https://github.com/gasconma1960/Final-Project-Mortgage-Rate-Genie/blob/Christy/data_heatmap.png" alt="Data Heatmap"></p>
+<p>The data was split into training and testing sets and then scaled using MinMaxScaler. The regression model was built using ordinary least squares to fit a linear equation to the training data that best describes the relationship between the independent variables and the dependent variable. The coefficients of the equation represent the magnitude and direction of the effect of each independent variable on the dependent variable.  ### Creating a 3D-Scatter with the PCA data and the clusters</p>
+<p><strong>Using PCA to reduce dimension to three principal components</strong></p>
+<p><img src="https://user-images.githubusercontent.com/112348240/223311768-ec353c36-00c8-4d3d-9d80-0142fa42acc5.png" alt="image"></p>
+<p><strong>Create a hvplot.scatter plot using y=&quot;Loan Amount&quot; and x=&quot;Interest Rate&quot;</strong></p>
+<p><img src="https://user-images.githubusercontent.com/112348240/223312125-666ed200-f12f-4b0a-b7a7-9938fb66585d.png" alt="image"></p>
+<h2 id="results"><strong>Results</strong></h2>
+<hr>
+<ul>
+<li>
+<p>Our analysis found that the independent variables, taken together, were strong predictors of mortgage interest rates, as demonstrated by the significant F-statistic (F(11, 1000) = 110.5, p &lt; 0.001). The model explained 79% of the variance in interest rates, with a good fit as indicated by the adjusted R-squared value of 0.78.</p>
+</li>
+<li>
+<p>Several individual variables were found to be significant predictors of interest rates. The strongest predictor was credit score, with higher scores associated with lower interest rates (coefficient = -0.0.0058, t(1000) = -11.4, p &lt; 0.001). Loan term also had a significant effect, with longer terms associated with higher interest rates (coefficient = 0.0.16, t(1000) = 6.7, p &lt; 0.001). Down payment was also a significant predictor, with a coefficient of -0.000005 (t(1000) = -3.4, p = 0.001), indicating that higher down payments were associated with lower interest rates. Similarly, loan amount was a significant predictor, with a coefficient of 0.0000005 (t(1000) = 5.3, p &lt; 0.001), indicating that higher loan amounts were associated with higher interest rates.</p>
+</li>
+<li>
+<p>The y-intercept of the model was 14.0, indicating the predicted interest rate when all other predictor variables are zero.</p>
+</li>
+<li>
+<p>The next step was to assemble the architecture of the deep learning model. In this project, we used Keras, a deep learning API from TensorFlow 2. Our input layer included the independent variables like loan amount and credit scores. We created two hidden layers with 495 and 297 nodes, respectively.  Finally, our out put layer consists of a single node; the output of this node is the predicted value of the dependent variable - in this case, interest rates</p>
+</li>
+</ul>
+<h2 id="discussion"><strong>Discussion</strong></h2>
+<hr>
+<ul>
+<li>
+<p>The results of this study indicate that credit score is the most important factor influencing interest rates for mortgage loans. Borrowers with higher credit scores are likely to receive lower interest rates, which can lead to significant savings over the life of a loan. The findings also suggest that loan term, loan amount, property value, and down payment are important factors to consider when applying for a mortgage.</p>
+</li>
+<li>
+<p>Limitations of the study include the use of a single dataset and the potential for multicollinearity among the independent variables. For future analyses, down payment would be a more informative predictor of interest rates if it were expressed as a percentage of the total loan amount, rather than as a simple dollar amount. This change would allow for more meaningful comparisons across loans with varying amounts and could improve the accuracy of interest rate predictions. Future research could explore additional factors that may influence interest rates, such as macroeconomic conditions and lender-specific factors.</p>
+</li>
+<li>
+<p>Using Machine Learning and apply to develop to the website wasn't the best approach so we decide to go an Create a Webpage using html, css and JavaScript for</p>
+</li>
+</ul>
+<h2 id="sql-pgadmin-use-to-create-our-tables"><strong>SQL PgAdmin use to Create our Tables</strong></h2>
+<hr>
+<p><img src="https://user-images.githubusercontent.com/112505962/223301247-13e337eb-1a77-4081-b6cf-5b72a3988893.png" alt="image"></p>
+<p><strong>Credit Scores criteria 600-699</strong>
+<img src="https://user-images.githubusercontent.com/112505962/223245228-70c80f0a-66bf-4d36-afe6-ee27eca1664b.png" alt="CS1"></p>
+<p><strong>Credit Scores criteria 700-799</strong>
+<img src="https://user-images.githubusercontent.com/112505962/223245103-598d8673-8a05-4dc2-85b4-fe84c53304e2.png" alt="CS2"></p>
+<p><strong>Credit Scores Criteria 800-850</strong>
+<img src="https://user-images.githubusercontent.com/112505962/223245489-7e34ba75-4764-4c77-85e4-a6d33a2fe3b5.png" alt="CS3"></p>
+<p><img src="https://user-images.githubusercontent.com/112505962/223245874-ac3c3e05-032b-4740-8602-29108c9c9013.png" alt="income summary"></p>
+<p><img src="https://user-images.githubusercontent.com/112505962/223245958-9699877a-a6ec-488e-8085-c560f4bb4947.png" alt="interest rate summary"></p>
+<p><img src="https://user-images.githubusercontent.com/112505962/223246067-ab3870a2-d0d8-4f53-a722-b2842a905d88.png" alt="loan terms summary"></p>
+<p><img src="https://user-images.githubusercontent.com/112505962/223246206-ec4b99af-6ee9-4641-8f5e-fa0187a81fca.png" alt="loan to value summary"></p>
+<p><img src="https://user-images.githubusercontent.com/112505962/223246271-a6e0be32-36b5-4289-b934-e8b8384575bd.png" alt="credit score summary"></p>
+<p><img src="https://user-images.githubusercontent.com/112505962/223246392-474e6d73-520c-4a6e-a7e0-6ddb81087c06.png" alt="debt to income summary"></p>
+<p><img src="https://user-images.githubusercontent.com/112505962/223246491-9395ea03-1d37-4281-8218-ef9cbb23be6e.png" alt="down payment summary"></p>
+<h2 id="interactive-webpage-using-html-css-and-js"><strong>Interactive WebPage using HTML, CSS and JS:</strong></h2>
+<hr>
+<p><strong>HTML Code Portion</strong></p>
+<pre class="hljs"><code><div><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-meta-keyword">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"UTF-8"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">"X-UA-Compatible"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"IE=edge"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"width=device-width, initial-scale=1.0"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">"Content-Type"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"text/html; charset=utf-8"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Mortgage Rate Genie<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"css/style 2.css"</span> /&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"Mortgage-Rate-Genie"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"top"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Mortgage Rate Genie<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+                <span class="hljs-selector-tag">body</span> {
+                    <span class="hljs-attribute">background-image</span>: <span class="hljs-built_in">url</span>(https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNTJjYzA4YTVjYjIzZjViZDk5ZmJkMzU5MTc3NmMxZTZmMzFkOTk2MSZjdD1n/Oz6HCmGdpvO0HPY4lz/giphy.gif);
+                    <span class="hljs-attribute">background-repeat</span>: no-repeat;
+                    <span class="hljs-attribute">background-size</span>: cover;
+                }
+            </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">action</span>=<span class="hljs-string">"#"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"input-row"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"creditScore"</span>&gt;</span>Credit Score:<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"number"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"creditScore"</span> /&gt;</span>
+                      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"input-row"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"loanTerm"</span>&gt;</span>Loan Term (years):<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"number"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"loanTerm"</span> /&gt;</span>
+                      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>```
+</div></code></pre>
+<p><strong>JS Code Portion</strong></p>
+<pre class="hljs"><code><div><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">calculate</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-comment">// get values from input boxes</span>
+  <span class="hljs-keyword">var</span> a = <span class="hljs-built_in">Number</span>(<span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"creditScore"</span>).value);
+  <span class="hljs-keyword">var</span> b = <span class="hljs-built_in">Number</span>(<span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"loanTerm"</span>).value);
+  <span class="hljs-keyword">var</span> c = <span class="hljs-built_in">Number</span>(<span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"downPayment"</span>).value);
+  <span class="hljs-keyword">var</span> d = <span class="hljs-built_in">Number</span>(<span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"loanAmount"</span>).value);
+
+  <span class="hljs-comment">// calculate result</span>
+  <span class="hljs-keyword">var</span> result = <span class="hljs-number">14.0</span> + (a * <span class="hljs-number">-0.0058</span>) + (b * <span class="hljs-number">0.016</span>) + (c * <span class="hljs-number">-0.000005</span>) + (d * <span class="hljs-number">0.0000005</span>);
+
+  <span class="hljs-comment">// display result</span>
+  <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"result"</span>).innerHTML = result.toFixed(<span class="hljs-number">2</span>);
+
+  <span class="hljs-keyword">var</span> gaugeData = [
+    {
+      <span class="hljs-attr">type</span>: <span class="hljs-string">"indicator"</span>,
+      <span class="hljs-attr">mode</span>: <span class="hljs-string">"gauge+number"</span>,
+      <span class="hljs-attr">value</span>: result,
+      <span class="hljs-attr">title</span>: {
+        <span class="hljs-attr">text</span>: <span class="hljs-string">"Interest Rate"</span>,
+        <span class="hljs-attr">font</span>: { <span class="hljs-attr">size</span>: <span class="hljs-number">24</span> },
+      },
+      <span class="hljs-attr">gauge</span>: {
+        <span class="hljs-attr">axis</span>: {
+          <span class="hljs-attr">range</span>: [<span class="hljs-number">0</span>, <span class="hljs-number">15</span>],
+          <span class="hljs-attr">tickvals</span>: [<span class="hljs-number">0</span>, <span class="hljs-number">3</span>, <span class="hljs-number">6</span>, <span class="hljs-number">9</span>, <span class="hljs-number">12</span>, <span class="hljs-number">15</span>],
+          <span class="hljs-attr">ticktext</span>: [<span class="hljs-string">'0'</span>, <span class="hljs-string">'3'</span>, <span class="hljs-string">'6'</span>, <span class="hljs-string">'9'</span>, <span class="hljs-string">'12'</span>, <span class="hljs-string">'15'</span>],
+          <span class="hljs-attr">tickwidth</span>: <span class="hljs-number">2</span>,
+          <span class="hljs-attr">tickcolor</span>: <span class="hljs-string">"red"</span>,
+        },
+        <span class="hljs-attr">bar</span>: { <span class="hljs-attr">color</span>: <span class="hljs-string">"darkblue"</span> },
+        <span class="hljs-attr">bgcolor</span>: <span class="hljs-string">"lightblue"</span>,
+        <span class="hljs-attr">borderwidth</span>: <span class="hljs-number">2</span>,
+        <span class="hljs-attr">bordercolor</span>: <span class="hljs-string">"gray"</span>,
+        <span class="hljs-attr">steps</span>: [<span class="hljs-string">``</span><span class="hljs-string">`
+</span></div></code></pre>
+<p><strong>CSS Code Portion</strong></p>
+<pre class="hljs"><code><div><span class="hljs-selector-class">.Mortgage-Rate-Genie</span> <span class="hljs-selector-tag">form</span> <span class="hljs-selector-tag">input</span> {
+  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">30px</span>;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">8px</span> <span class="hljs-number">24px</span>;
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+  <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">35px</span>;
+}
+
+<span class="hljs-selector-class">.botton</span> {
+  <span class="hljs-attribute">background-color</span>: red;
+  <span class="hljs-attribute">font-size</span>: x-large;
+  <span class="hljs-attribute">color</span>: white;
+  <span class="hljs-attribute">border</span>: none;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">8px</span> <span class="hljs-number">32px</span>;
+  <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">24px</span>;
+  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">30px</span>;
+  <span class="hljs-attribute">font-weight</span>: <span class="hljs-number">2000</span>;
+  <span class="hljs-attribute">display</span>: inline-flexbox;
+  <span class="hljs-attribute">cursor</span>: pointer;
+  <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">28px</span> <span class="hljs-number">0</span>;
+}
+<span class="hljs-selector-class">.input-container</span>,
+<span class="hljs-selector-class">.result-container</span> {
+  <span class="hljs-attribute">font-size</span>: large;
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">75%</span>;
+}
+
+<span class="hljs-selector-tag">img</span> {
+  <span class="hljs-attribute">max-width</span>: <span class="hljs-number">200%</span>;
+  <span class="hljs-attribute">height</span>: auto;
+  <span class="hljs-attribute">float</span>:left;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">12px</span>;
+  <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid <span class="hljs-number">#ccc</span>;
+  <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">5px</span>;
+}
+<span class="hljs-selector-class">.bottom</span> {
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#f2f2f2</span>; <span class="hljs-comment">/* sets the background color */</span>
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">20px</span>; <span class="hljs-comment">/* adds some padding to the element */</span>
+}
+
+<span class="hljs-selector-class">.bottom</span> <span class="hljs-selector-tag">h3</span> {
+  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">32px</span>; <span class="hljs-comment">/* sets the font size of the heading */</span>
+  <span class="hljs-attribute">color</span>: <span class="hljs-number">#333</span>; <span class="hljs-comment">/* sets the font color of the heading */</span>
+  <span class="hljs-attribute">text-align</span>: center; <span class="hljs-comment">/* centers the heading text */</span>
+}
+
+<span class="hljs-keyword">@media</span> (<span class="hljs-attribute">max-width:</span> <span class="hljs-number">2000px</span>) {
+  <span class="hljs-selector-class">.Mortgage-Rate-Calculator</span> {
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">200%</span>;
+  <span class="hljs-attribute">max-width</span>: <span class="hljs-number">200px</span>;
+  <span class="hljs-attribute">background-color</span>: red;
+  <span class="hljs-attribute">font-size</span>: x-large;
+  <span class="hljs-attribute">color</span>: white;
+  <span class="hljs-attribute">border</span>: none;
+ }
+  
+  <span class="hljs-selector-class">.Mortgage-Rate-Genie</span> <span class="hljs-selector-tag">form</span> {
+  <span class="hljs-attribute">flex-direction</span>: row;
+  <span class="hljs-attribute">gap</span>: <span class="hljs-number">20px</span>;
+
+  }
+</div></code></pre>
+<h2 id="conclusion"><strong>Conclusion:</strong></h2>
+<hr>
+<p>This study highlights the importance of credit score, loan term, loan amount, property value, and down payment in determining interest rates for mortgage loans. These findings can inform borrowers' decisions when applying for a mortgage and can also help lenders make more informed decisions when setting interest rates.</p>
+<h2 id="communication-channels-use-for-the-project"><strong>Communication Channels use for The Project</strong></h2>
+<hr>
+<ul>
+<li>Slack</li>
+<li>Zoom Meeting</li>
+<li>WhatsApp</li>
+<li>Microsoft Teams Meeting</li>
+</ul>
+<h2 id="visualization">Visualization</h2>
+<hr>
+<p><a href="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmExNmVkYzg3MDFhNzkxMGNmODM1ZGE1NDk1NTA4MTYyNWJmMDZhOCZjdD1n/QmNuYxDZgxXAEobjLZ/giphy.gif">Gif image</a></p>
+<p><a href="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZWM5Y2VlOTkzZTU0NTZlN2VjNzRkNWM5NDYzNGM1ZWEyZTlmZjk2NyZjdD1n/1WSdNroJ9bS4YduyU1/giphy.gif">Gif image</a></p>
+<h2 id="project-status"><strong>Project Status</strong></h2>
+<hr>
+<ul>
+<li><strong>Data Selection:</strong> Complete</li>
+</ul>
+<ul>
+<li><strong>ETL:</strong> Complete</li>
+<li><strong>Machine Learning:</strong> Complete</li>
+<li><strong>Html, css and JavaScript for the Interactive Webpage:</strong> Complete</li>
+<li><strong>Presentation on PowerPoint:</strong> In Process</li>
+</ul>
+<h2 id="ucf-bootcamp-data-analytics-and-visualization"><strong>UCF Bootcamp Data Analytics and Visualization</strong></h2>
+<hr>
+<p><img src="https://user-images.githubusercontent.com/112348240/226147265-e895d034-d025-4bab-a262-ca4c5e0c2301.png" alt="image"></p>
+</html>
+
+</body>
+</html>
