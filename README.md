@@ -1,12 +1,10 @@
 ![image with paper color background](./Background.jpg)
 
 # <span style="color:green">UCF Bootcamp Final Project - Mortgage Rate Genie</span>
-
 ______
 [![Alt text](https://img.youtube.com/vi/F-WlS0Z8Nto/0.jpg)](https://www.youtube.com/watch?v=F-WlS0Z8Nto)
 
 # <span style="color:green">Overview</span>
-
 _____
 Our team has created a multiple linear regression model that can predict mortgage interest rates based on a range of features. To make our model user-friendly, we've built an app, the Mortgage Rate Genie, that lets users input their own data and receive a personalized prediction for their mortgage interest rate. By leveraging the power of data analytics, our model takes into account a variety of factors that lenders consider when setting interest rates, such as loan amount, credit score, property value, loan term, employment length, and more. With this information, our app can provide users with a reliable estimate of what they can expect to pay in interest over the life of their mortgage.
 
@@ -325,6 +323,6 @@ ______
 * **Html, css and JavaScript for the Interactive Webpage:** Complete
 * **Presentation on PowerPoint:** In Process
 
-## <span style="color:red">UCF Bootcamp Data Analytics and Visualization</span>
+## <span style="color:green">UCF Bootcamp Data Analytics and Visualization</span>
 ______
 ![image](https://user-images.githubusercontent.com/112348240/226147265-e895d034-d025-4bab-a262-ca4c5e0c2301.png)
