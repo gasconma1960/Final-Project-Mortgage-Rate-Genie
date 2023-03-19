@@ -1,5 +1,26 @@
 # **UCF Bootcamp Final Project - Mortgage Rate Genie**
- 
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /* Style for the header */
+      header {
+        background-color: #4CAF50; /* Add your preferred color here */
+        color: white;
+        padding: 20px;
+        text-align: center;
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      UCF Bootcamp Final Project - Mortgage Rate Genie
+    </header>
+    <!-- Rest of your code goes here -->
+  </body>
+</html>
+
 [![Alt text](https://img.youtube.com/vi/F-WlS0Z8Nto/0.jpg)](https://www.youtube.com/watch?v=F-WlS0Z8Nto)
 
 # **Overview**
