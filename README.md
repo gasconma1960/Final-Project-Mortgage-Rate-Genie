@@ -1,12 +1,13 @@
-# **UCF Bootcamp Final Project - Mortgage Rate Genie**
+
+## $${\color{red}UCF\space Bootcamp\space Final\space Project - Mortgage\space Rate\space Genie}$$
 ______
 [![Alt text](https://img.youtube.com/vi/F-WlS0Z8Nto/0.jpg)](https://www.youtube.com/watch?v=F-WlS0Z8Nto)
 
-# **Overview**
+# $${\color{red}Overview}$$
 _____
 Our team has created a multiple linear regression model that can predict mortgage interest rates based on a range of features. To make our model user-friendly, we've built an app, the Mortgage Rate Genie, that lets users input their own data and receive a personalized prediction for their mortgage interest rate. By leveraging the power of data analytics, our model takes into account a variety of factors that lenders consider when setting interest rates, such as loan amount, credit score, property value, loan term, employment length, and more. With this information, our app can provide users with a reliable estimate of what they can expect to pay in interest over the life of their mortgage.
 
-## Project Summary
+# $${\color{red}Project \ Summary}$$
 ______
 For more information about our project, please view the following presentation slides:
 
