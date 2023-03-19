@@ -162,11 +162,11 @@ The data was split into training and testing sets and then scaled using MinMaxSc
 
 **JS Screenshot**
 
-![image](https://user-images.githubusercontent.com/112348240/226147028-5efd37f9-5b22-4ced-9ce4-c20f83cc297f.png)
+![image](https://user-images.githubusercontent.com/112348240/226147305-a3b88628-0b06-4d5b-860a-92d7a22fdf6c.png)
 
 **CSS Screenshoot**
 
-![image](https://user-images.githubusercontent.com/112348240/226147079-e5762901-6c1a-4a14-9e6d-567e1518c498.png)
+![image](https://user-images.githubusercontent.com/112348240/226147314-6db8be79-6929-43f8-80c5-ac00a5864a67.png)
 
 ## **Conclusion:**
  This study highlights the importance of credit score, loan term, loan amount, property value, and down payment in determining interest rates for mortgage loans. These findings can inform borrowers' decisions when applying for a mortgage and can also help lenders make more informed decisions when setting interest rates.
@@ -191,4 +191,9 @@ The data was split into training and testing sets and then scaled using MinMaxSc
 - **Presentation on PowerPoint:** In Process
 
 ## **UCF Bootcamp Data Analytics and Visualization**
+
+![image](https://user-images.githubusercontent.com/112348240/226147265-e895d034-d025-4bab-a262-ca4c5e0c2301.png)
+
+
+
 
