@@ -327,4 +327,3 @@ ______
 ## <span style="color:red">UCF Bootcamp Data Analytics and Visualization</span>
 ______
 ![image](https://user-images.githubusercontent.com/112348240/226147265-e895d034-d025-4bab-a262-ca4c5e0c2301.png)
-</html>
