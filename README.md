@@ -156,13 +156,145 @@ ______
 
 ## **Interactive WebPage using HTML, CSS and JS:**
 ______
-**JS Screenshot**
+**HTML Code Portion**
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Mortgage Rate Genie</title>
+    <link rel="stylesheet" href="css/style 2.css" />
+</head>
+<body>
+    <div class="Mortgage-Rate-Genie">
+        <div class="top">
+            <h2>Mortgage Rate Genie</h2>
+            <style>
+                body {
+                    background-image: url(https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNTJjYzA4YTVjYjIzZjViZDk5ZmJkMzU5MTc3NmMxZTZmMzFkOTk2MSZjdD1n/Oz6HCmGdpvO0HPY4lz/giphy.gif);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+            </style>
 
-![image](https://user-images.githubusercontent.com/112348240/226147305-a3b88628-0b06-4d5b-860a-92d7a22fdf6c.png)
+            <div class="container">
+                <form action="#">
+                    <div class="input-row">
+                        <label for="creditScore">Credit Score:</label>
+                        <input type="number" id="creditScore" />
+                      </div>
+                      <div class="input-row">
+                        <label for="loanTerm">Loan Term (years):</label>
+                        <input type="number" id="loanTerm" />
+                      </div>```
+```
 
-**CSS Screenshoot**
+**JS Code Portion**
+```JS
+function calculate() {
+  // get values from input boxes
+  var a = Number(document.getElementById("creditScore").value);
+  var b = Number(document.getElementById("loanTerm").value);
+  var c = Number(document.getElementById("downPayment").value);
+  var d = Number(document.getElementById("loanAmount").value);
 
-![image](https://user-images.githubusercontent.com/112348240/226147314-6db8be79-6929-43f8-80c5-ac00a5864a67.png)
+  // calculate result
+  var result = 14.0 + (a * -0.0058) + (b * 0.016) + (c * -0.000005) + (d * 0.0000005);
+
+  // display result
+  document.getElementById("result").innerHTML = result.toFixed(2);
+
+  var gaugeData = [
+    {
+      type: "indicator",
+      mode: "gauge+number",
+      value: result,
+      title: {
+        text: "Interest Rate",
+        font: { size: 24 },
+      },
+      gauge: {
+        axis: {
+          range: [0, 15],
+          tickvals: [0, 3, 6, 9, 12, 15],
+          ticktext: ['0', '3', '6', '9', '12', '15'],
+          tickwidth: 2,
+          tickcolor: "red",
+        },
+        bar: { color: "darkblue" },
+        bgcolor: "lightblue",
+        borderwidth: 2,
+        bordercolor: "gray",
+        steps: [```
+```
+
+**CSS Code Portion**
+```css
+.Mortgage-Rate-Genie form input {
+  font-size: 30px;
+  padding: 8px 24px;
+  width: 100%;
+  margin-bottom: 35px;
+}
+
+.botton {
+  background-color: red;
+  font-size: x-large;
+  color: white;
+  border: none;
+  padding: 8px 32px;
+  border-radius: 24px;
+  font-size: 30px;
+  font-weight: 2000;
+  display: inline-flexbox;
+  cursor: pointer;
+  margin-bottom: 28px 0;
+}
+.input-container,
+.result-container {
+  font-size: large;
+  width: 75%;
+}
+
+img {
+  max-width: 200%;
+  height: auto;
+  float:left;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.bottom {
+  background-color: #f2f2f2; /* sets the background color */
+  padding: 20px; /* adds some padding to the element */
+}
+
+.bottom h3 {
+  font-size: 32px; /* sets the font size of the heading */
+  color: #333; /* sets the font color of the heading */
+  text-align: center; /* centers the heading text */
+}
+
+@media (max-width: 2000px) {
+  .Mortgage-Rate-Calculator {
+  width: 200%;
+  max-width: 200px;
+  background-color: red;
+  font-size: x-large;
+  color: white;
+  border: none;
+ }
+  
+  .Mortgage-Rate-Genie form {
+  flex-direction: row;
+  gap: 20px;
+
+  }
+  ```
+
 
 ## **Conclusion:**
 ___
