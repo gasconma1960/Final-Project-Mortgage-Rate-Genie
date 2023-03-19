@@ -43,7 +43,7 @@ Link to presentation
 ## **Data Collection**
 The first component of our project was to find a dataset that included mortgage interest rates and multiple factors that influence interest rates. We decided to use ChatGPT to help design the appropriate dataset. The following was the prompt that was entered into ChatGPT:
 
-"I need a data set for mortgage interest rates. I need a variety of factors that would determine interest rates of a mortgage, preferebly 10 or more. Can you create a data set for me that is at least 1000 rows"
+>"I need a data set for mortgage interest rates. I need a variety of factors that would determine interest rates of a mortgage, preferebly 10 or more. Can you create a data set for me that is at least 1000 rows"
 
 ChatGPT gave us code that would create a 1000-row dataframe with interest rates and multiple 12 features that can potentially influence interest rates. The features included in our dataset are as follows:
 
