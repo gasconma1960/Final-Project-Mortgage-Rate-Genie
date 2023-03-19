@@ -1,5 +1,3 @@
-![image with paper color background](./Background.jpg)
-
 # <span style="color:green">UCF Bootcamp Final Project - Mortgage Rate Genie</span>
 ______
 [![Alt text](https://img.youtube.com/vi/F-WlS0Z8Nto/0.jpg)](https://www.youtube.com/watch?v=F-WlS0Z8Nto)
