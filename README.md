@@ -1,5 +1,26 @@
 # **UCF Bootcamp Final Project - Mortgage Rate Genie**
- 
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /* Style for the header */
+      header {
+        background-color: #4CAF50; /* Add your preferred color here */
+        color: white;
+        padding: 20px;
+        text-align: center;
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      UCF Bootcamp Final Project - Mortgage Rate Genie
+    </header>
+    <!-- Rest of your code goes here -->
+  </body>
+</html>
+
 [![Alt text](https://img.youtube.com/vi/F-WlS0Z8Nto/0.jpg)](https://www.youtube.com/watch?v=F-WlS0Z8Nto)
 
 # **Overview**
@@ -193,7 +214,3 @@ The data was split into training and testing sets and then scaled using MinMaxSc
 ## **UCF Bootcamp Data Analytics and Visualization**
 
 ![image](https://user-images.githubusercontent.com/112348240/226147265-e895d034-d025-4bab-a262-ca4c5e0c2301.png)
-
-
-
-
