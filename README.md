@@ -11,7 +11,7 @@ ______
 For more information about our project, please view the following presentation slides:
 
 Link to presentation
- <https://onedrive.live.com/edit.aspx?resid=F551EBD77C412B7E>!21811&ithint=file%2cpptx&authkey=!AF1wOl8ZtMhkqTg
+ <[https://onedrive.live.com/edit.aspx?resid=F551EBD77C412B7E>!21811&ithint=file%2cpptx&authkey=!AF1wOl8ZtMhkqTg](https://1drv.ms/p/s!An4rQXzX61H1gbtDIMQb7LFlyQ6eMA?e=b0KkNb)
 
 ## <span style="color:green">Resources</span>
 ______
