@@ -1,4 +1,5 @@
 # **UCF Bootcamp Final Project - Mortgage Rate Genie**
+'''html
 <!-- <!DOCTYPE html>
 <html>
   <head>
@@ -19,8 +20,6 @@
     </header>
     <!-- Rest of your code goes here -->
   </body>
-</html>
-
 [![Alt text](https://img.youtube.com/vi/F-WlS0Z8Nto/0.jpg)](https://www.youtube.com/watch?v=F-WlS0Z8Nto)
 
 # **Overview**
@@ -214,3 +213,4 @@ The data was split into training and testing sets and then scaled using MinMaxSc
 ## **UCF Bootcamp Data Analytics and Visualization**
 
 ![image](https://user-images.githubusercontent.com/112348240/226147265-e895d034-d025-4bab-a262-ca4c5e0c2301.png)
+</html>
