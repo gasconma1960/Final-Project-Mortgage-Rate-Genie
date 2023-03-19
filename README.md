@@ -1,5 +1,6 @@
 # **UCF Bootcamp Final Project - Mortgage Rate Genie**
-![image](https://user-images.githubusercontent.com/112348240/225426797-f384f519-096f-451f-a739-7635e73d2c2b.png)
+ 
+[![Alt text](https://img.youtube.com/vi/F-WlS0Z8Nto/0.jpg)](https://www.youtube.com/watch?v=F-WlS0Z8Nto)
 
 # **Overview**
 Our team has created a multiple linear regression model that can predict mortgage interest rates based on a range of features. To make our model user-friendly, we've built an app, the Mortgage Rate Genie, that lets users input their own data and receive a personalized prediction for their mortgage interest rate. By leveraging the power of data analytics, our model takes into account a variety of factors that lenders consider when setting interest rates, such as loan amount, credit score, property value, loan term, employment length, and more. With this information, our app can provide users with a reliable estimate of what they can expect to pay in interest over the life of their mortgage.
@@ -125,6 +126,8 @@ The data was split into training and testing sets and then scaled using MinMaxSc
 
 ## **SQL PgAdmin use to Create our Tables**
 
+![image](https://user-images.githubusercontent.com/112505962/223301247-13e337eb-1a77-4081-b6cf-5b72a3988893.png)
+
 **Credit Scores criteria 600-699**
 ![CS1](https://user-images.githubusercontent.com/112505962/223245228-70c80f0a-66bf-4d36-afe6-ee27eca1664b.png)
 
@@ -155,11 +158,15 @@ The data was split into training and testing sets and then scaled using MinMaxSc
 
 ![down payment summary](https://user-images.githubusercontent.com/112505962/223246491-9395ea03-1d37-4281-8218-ef9cbb23be6e.png)
 
+## **Interactive WebPage using HTML, CSS and JS:**
 
-![image](https://user-images.githubusercontent.com/112505962/223301247-13e337eb-1a77-4081-b6cf-5b72a3988893.png)
- 
-[![Alt text](https://img.youtube.com/vi/F-WlS0Z8Nto/0.jpg)](https://www.youtube.com/watch?v=F-WlS0Z8Nto)
+**JS Screenshot**
 
+![image](https://user-images.githubusercontent.com/112348240/226147305-a3b88628-0b06-4d5b-860a-92d7a22fdf6c.png)
+
+**CSS Screenshoot**
+
+![image](https://user-images.githubusercontent.com/112348240/226147314-6db8be79-6929-43f8-80c5-ac00a5864a67.png)
 
 ## **Conclusion:**
  This study highlights the importance of credit score, loan term, loan amount, property value, and down payment in determining interest rates for mortgage loans. These findings can inform borrowers' decisions when applying for a mortgage and can also help lenders make more informed decisions when setting interest rates.
@@ -180,9 +187,13 @@ The data was split into training and testing sets and then scaled using MinMaxSc
 - **Data Selection:** Complete
 - **ETL:** Complete
 - **Machine Learning:** Complete
-- **Html, css and JavaScript for the Interactive Webpage:** In Process
+- **Html, css and JavaScript for the Interactive Webpage:** Complete
 - **Presentation on PowerPoint:** In Process
 
 ## **UCF Bootcamp Data Analytics and Visualization**
- By: Christy, Marisol, Stephanie, Maria & Omie
-  ![image](https://user-images.githubusercontent.com/112348240/222617620-6986d9bc-d574-4d47-aefb-63b4b772277c.png)
+
+![image](https://user-images.githubusercontent.com/112348240/226147265-e895d034-d025-4bab-a262-ca4c5e0c2301.png)
+
+
+
+
