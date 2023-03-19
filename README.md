@@ -126,6 +126,8 @@ The data was split into training and testing sets and then scaled using MinMaxSc
 
 ## **SQL PgAdmin use to Create our Tables**
 
+![image](https://user-images.githubusercontent.com/112505962/223301247-13e337eb-1a77-4081-b6cf-5b72a3988893.png)
+
 **Credit Scores criteria 600-699**
 ![CS1](https://user-images.githubusercontent.com/112505962/223245228-70c80f0a-66bf-4d36-afe6-ee27eca1664b.png)
 
@@ -156,10 +158,15 @@ The data was split into training and testing sets and then scaled using MinMaxSc
 
 ![down payment summary](https://user-images.githubusercontent.com/112505962/223246491-9395ea03-1d37-4281-8218-ef9cbb23be6e.png)
 
+## **Interactive WebPage using HTML, CSS and JS:**
 
-![image](https://user-images.githubusercontent.com/112505962/223301247-13e337eb-1a77-4081-b6cf-5b72a3988893.png)
+**JS Screenshot**
 
+![image](https://user-images.githubusercontent.com/112348240/226147028-5efd37f9-5b22-4ced-9ce4-c20f83cc297f.png)
 
+**CSS Screenshoot**
+
+![image](https://user-images.githubusercontent.com/112348240/226147079-e5762901-6c1a-4a14-9e6d-567e1518c498.png)
 
 ## **Conclusion:**
  This study highlights the importance of credit score, loan term, loan amount, property value, and down payment in determining interest rates for mortgage loans. These findings can inform borrowers' decisions when applying for a mortgage and can also help lenders make more informed decisions when setting interest rates.
@@ -180,9 +187,8 @@ The data was split into training and testing sets and then scaled using MinMaxSc
 - **Data Selection:** Complete
 - **ETL:** Complete
 - **Machine Learning:** Complete
-- **Html, css and JavaScript for the Interactive Webpage:** In Process
+- **Html, css and JavaScript for the Interactive Webpage:** Complete
 - **Presentation on PowerPoint:** In Process
 
 ## **UCF Bootcamp Data Analytics and Visualization**
- By: Christy, Marisol, Stephanie, Maria & Omie
-  ![image](https://user-images.githubusercontent.com/112348240/222617620-6986d9bc-d574-4d47-aefb-63b4b772277c.png)
+
