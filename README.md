@@ -79,7 +79,7 @@ We began our analysis by taking a close look at the data. The code that created 
 
 **One-hot encoding** identifies all unique column values and splits the single categorical column into a series of columns, each containing information about a single unique categorical value.
 
-![Data Histogram](https://github.com/gasconma1960/Final-Project-Mortgage-Rate-Genie/blob/Christy/data_histogram.png)
+![image](https://user-images.githubusercontent.com/112348240/226156472-98321e6b-4dff-48c6-b102-ec4d010089cb.png)
 
 Then, we plotted our data to look for outliers that may be influencing the distribution.
 
@@ -92,12 +92,12 @@ Then, we plotted our data to look for outliers that may be influencing the distr
  Once the model is trained, evaluate its performance on a test set of data that was not used during training. Calculate metrics such as mean squared error, R-squared, and correlation coefficients to measure the accuracy of the model's predictions.
 
 **Data Boxplot**
-![Data Boxplot](https://github.com/gasconma1960/Final-Project-Mortgage-Rate-Genie/blob/Christy/data_boxplots.png)
+![image](https://user-images.githubusercontent.com/112348240/226156438-9afd9915-7c1d-450a-bce0-4b3249fde5f6.png)
 
 Another assumption of linear regression is that there is no multicollinearity. In other words, independent variables are not highly correlated with each other. A heat map of our continous variables shows that the independent variables are not highly correlated with each other.
 
 **Data Heatmap**
-![Data Heatmap](https://github.com/gasconma1960/Final-Project-Mortgage-Rate-Genie/blob/Christy/data_heatmap.png)
+![image](https://user-images.githubusercontent.com/112348240/226156421-51ba7923-8eb3-460c-b3cb-e5a2a9603c3c.png)
 
 The data was split into training and testing sets and then scaled using MinMaxScaler. The regression model was built using ordinary least squares to fit a linear equation to the training data that best describes the relationship between the independent variables and the dependent variable. The coefficients of the equation represent the magnitude and direction of the effect of each independent variable on the dependent variable.  ### Creating a 3D-Scatter with the PCA data and the clusters
 
