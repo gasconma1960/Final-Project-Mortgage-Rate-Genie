@@ -191,6 +191,7 @@ ______
                         <input type="number" id="loanTerm" />
                       </div>```
 ```
+![image](https://user-images.githubusercontent.com/112348240/226213554-18459364-4886-45e4-a510-01d27ab2ab4e.png)
 
 **JS Code Portion**
 ```JS
@@ -230,6 +231,7 @@ function calculate() {
         bordercolor: "gray",
         steps: [```
 ```
+![image](https://user-images.githubusercontent.com/112348240/226213586-f161c0c0-786b-4c0c-9201-2c27933e21ee.png)
 
 **CSS Code Portion**
 ```css
