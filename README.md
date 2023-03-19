@@ -1,4 +1,4 @@
-![image with paper color background](./Background.jpg")
+![image with paper color background](./Background.jpg)
 
 # <span style="color:green">UCF Bootcamp Final Project - Mortgage Rate Genie</span>
 
